@@ -15,7 +15,7 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-@theme { 
+@theme {
   --color-primary: rgb(60, 70, 123);
   --color-secondary: rgb(80, 88, 156);
   --color-tertiary: rgb(99, 108, 203);
