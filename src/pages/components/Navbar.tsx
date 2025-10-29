@@ -1,12 +1,38 @@
+import { useState, useEffect } from "react";
 import { WhatsappInitialMessage } from "../../constants";
 import { getWhatsappContactLinkWithMessage } from "../../utils/contact";
 
 export default function Navbar() {
-  return (
-    <nav className="flex justify-between items-center fixed top-0 left-0 w-full bg-white z-50 h-16 border-rounded-md px-8">
-      <h1 className="text-2xl font-bold text-primary">Oftalmo Nordelta</h1>
+  const [isScrolled, setIsScrolled] = useState(false);
 
-      <ul className="flex gap-10 text-secondary font-semibold h-full items-center">
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 50);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  return (
+    <nav
+      className={`flex justify-between items-center fixed top-0 left-0 w-full z-50 h-16 px-8 transition-all duration-500 ease-in-out ${
+        isScrolled ? "bg-white shadow-md" : "bg-transparent"
+      }`}
+    >
+      <h1
+        className={`text-2xl font-bold transition-colors duration-500 ${
+          isScrolled ? "text-primary" : "text-white"
+        }`}
+      >
+        Oftalmo Nordelta
+      </h1>
+
+      <ul
+        className={`flex gap-10 font-semibold h-full items-center transition-colors duration-500 ${
+          isScrolled ? "text-secondary" : "text-white"
+        }`}
+      >
         <li>
           <a href="/profesionales">Profesionales</a>
         </li>
