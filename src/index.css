@@ -5,9 +5,11 @@
   line-height: 1.5;
   font-weight: 400;
 
+  --white-87: rgba(255, 255, 255, 0.87);
+
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  color: var(--white-87);
+  background-color: var(--white-87);;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
