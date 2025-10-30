@@ -14,6 +14,17 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  const scrollToSection = (
+    e: React.MouseEvent<HTMLAnchorElement>,
+    sectionId: string
+  ) => {
+    e.preventDefault();
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  };
+
   return (
     <nav
       className={`flex justify-between items-center fixed top-0 left-0 w-full z-50 h-16 px-4 sm:px-8 transition-all duration-500 ease-in-out ${
@@ -34,13 +45,31 @@ export default function Navbar() {
         }`}
       >
         <li className="max-md:hidden">
-          <a className="max-md:hidden hover:opacity-70" href="/profesionales">Profesionales</a>
+          <a
+            className="max-md:hidden hover:opacity-70 cursor-pointer"
+            href="#profesionales"
+            onClick={(e) => scrollToSection(e, "profesionales")}
+          >
+            Profesionales
+          </a>
         </li>
         <li className="max-md:hidden">
-          <a className="max-md:hidden hover:opacity-70" href="/atencion">Atención</a>
+          <a
+            className="max-md:hidden hover:opacity-70 cursor-pointer"
+            href="#atencion"
+            onClick={(e) => scrollToSection(e, "atencion")}
+          >
+            Atención
+          </a>
         </li>
         <li className="max-md:hidden">
-          <a className="max-md:hidden hover:opacity-70" href="/ubicacion">Ubicación</a>
+          <a
+            className="max-md:hidden hover:opacity-70 cursor-pointer"
+            href="#ubicacion"
+            onClick={(e) => scrollToSection(e, "ubicacion")}
+          >
+            Ubicación
+          </a>
         </li>
         <li>
           <a

@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -9,7 +13,7 @@
 
   color-scheme: light dark;
   color: var(--white-87);
-  background-color: var(--white-87);;
+  background-color: var(--white-87);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -22,4 +26,5 @@
   --color-secondary: rgb(80, 88, 156);
   --color-tertiary: rgb(99, 108, 203);
   --color-accent: rgb(110, 140, 251);
+  --color-custom-white: var(--white-87);
 }
