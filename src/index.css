@@ -28,3 +28,28 @@ html {
   --color-accent: rgb(110, 140, 251);
   --color-custom-white: var(--white-87);
 }
+
+.carrousel-card {
+  background-color: var(--color-custom-white);
+  box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1),
+    0 8px 10px -6px rgb(0 0 0 / 0.1);
+  border-radius: 0.75rem;
+  min-width: 300px;
+  height: 10rem;
+  flex: 1 0 auto;
+  padding-right: 1.5rem;
+}
+
+/* Infinite Carousel Animation */
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%); /* width of 5 items + gaps */
+  }
+}
+
+.animate-scroll {
+  animation: scroll 20s linear infinite;
+}
