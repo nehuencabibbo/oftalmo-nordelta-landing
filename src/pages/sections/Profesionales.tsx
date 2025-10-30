@@ -51,7 +51,7 @@ export default function Profesionales() {
 
         {/* !!! Si se cambia el gap hay que cambiarlo en el carrousel-card tambien */}
         { /* source: https://www.youtube.com/watch?v=KD1Yo8a_Qis */}
-        <div className="flex flex-row oveflow-x-auto gap-6">
+        <div className="flex flex-row oveflow-x-auto">
           <div className="flex flex-row animate-scroll gap-6 pr-6">
             <div className="carrousel-card"></div>
             <div className="carrousel-card"></div>
