@@ -85,7 +85,7 @@ export default function Navbar() {
         <li>
           <a
             href={getWhatsappContactLinkWithMessage(WhatsappInitialMessage)}
-            className="max-md:align-center shadow-md inline-flex items-center text-white bg-secondary hover:bg-tertiary rounded-3xl px-3.5 py-1.5"
+            className="max-md:align-center cta-button"
           >
             Sacar Turno
           </a>

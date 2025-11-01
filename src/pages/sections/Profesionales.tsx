@@ -11,7 +11,7 @@ export default function Profesionales() {
         Profesionales
       </h2>
       <div className="flex w-full gap-6 justify-center items-start">
-        <img src={mamus} className="cover max-w-full h-60 sm:h-110 shadow-xl"></img>
+        <img src={mamus} className="cover max-w-full h-60 sm:h-110 shadow-xl rounded-md"></img>
         <div className="flex flex-col gap-6 max-w-[40%]">
           <div className="flex items-center gap-3">
             <img src={italianoLogo} className="cover max-w-full h-7"></img>
