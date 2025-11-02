@@ -2,6 +2,7 @@ import { useState, useEffect, useRef } from "react";
 import { WhatsappInitialMessage } from "../../constants";
 import { getWhatsappContactLinkWithMessage } from "../../utils/contact";
 import { FaWhatsapp } from "react-icons/fa";
+import { getSectionYAxisOffset, type section } from "../../utils/scroll";
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -26,8 +27,7 @@ export default function Navbar() {
       const navbarHeight = navRef.current.offsetHeight;
       const elementPosition = element.getBoundingClientRect().top;
       const offsetPosition =
-        elementPosition + window.scrollY - navbarHeight + 35;
-      // TODO: Ese 35 tiene que ser en verdad dependiendo la seccion a ver como se ve
+        elementPosition + window.scrollY - navbarHeight + getSectionYAxisOffset(sectionId as section);
 
       window.scrollTo({
         top: offsetPosition,
