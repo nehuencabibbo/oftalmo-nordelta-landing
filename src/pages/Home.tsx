@@ -4,6 +4,7 @@ import Profesionales from "./sections/Profesionales";
 import Atencion from "./sections/Atencion";
 import Ubicacion from "./sections/Ubicacion";
 import Footer from "./components/Footer";
+import ObrasSociales from "./sections/ObrasSociales";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       <Navbar />
       <Hero />
       <Profesionales />
+      <ObrasSociales />
       <Atencion /> 
       <Ubicacion /> 
       <Footer />

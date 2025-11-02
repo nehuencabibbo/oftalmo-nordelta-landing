@@ -69,9 +69,18 @@ export default function Navbar() {
           <a
             className="max-md:hidden hover:opacity-70 cursor-pointer"
             href="#atencion"
-            onClick={(e) => scrollToSection(e, "atencion")}
+            onClick={(e) => scrollToSection(e, "cobertura")}
           >
             Atención
+          </a>
+        </li>
+        <li className="max-md:hidden">
+          <a
+            className="max-md:hidden hover:opacity-70 cursor-pointer"
+            href="#cobertura"
+            onClick={(e) => scrollToSection(e, "atencion")}
+          >
+            Cobretura
           </a>
         </li>
         <li className="max-md:hidden">

@@ -1,7 +1,7 @@
 export default function Atencion() {
 
     return (
-        <section id="atencion" className="w-full h-screen bg-secondary">
+        <section id="atencion" className="w-full h-screen bg-custom-white">
             {/* Carousel Container with Fade Edges */}
             <div className="relative w-full overflow-hidden">
                 {/* Left Fade */}
