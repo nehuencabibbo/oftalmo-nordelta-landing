@@ -22,7 +22,7 @@ export default function Profesionales() {
           ></img>
           <p className="text-sm text-custom-white/80 italic mt-3 text-center">
             Dr. Betty Giselle Arteaga, Medica Oftalmologa, M.N. 112049 – M.P.
-            33230
+            332301
           </p>
         </div>
         <div className="flex flex-col gap-6 w-full lg:w-1/2 xl:w-[55%] text-custom-white">
@@ -75,7 +75,7 @@ export default function Profesionales() {
               className="cta-button inline-flex items-center justify-center gap-2 px-6 py-3 text-lg"
             >
               <FaWhatsapp className="w-6 h-6" />
-              <span>Saque Turno Ahora</span>
+              <span>Saque su Turno Ahora!</span>
             </a>
           </div>
         </div>
