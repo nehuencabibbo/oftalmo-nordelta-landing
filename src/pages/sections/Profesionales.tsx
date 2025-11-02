@@ -8,7 +8,7 @@ export default function Profesionales() {
   return (
     <section
       id="profesionales"
-      className="flex flex-col justify-center items-center w-full min-h-screen bg-primary px-6 py-12 md:px-10 md:py-16 gap-12"
+      className="flex flex-col justify-center items-center w-full min-h-screen bg-primary px-6 py-8 md:px-10  gap-12"
     >
       <h2 className="text-custom-white text-center text-4xl sm:text-5xl lg:text-6xl font-semibold text-shadow-md">
         Profesionales
@@ -26,7 +26,7 @@ export default function Profesionales() {
           </p>
         </div>
         <div className="flex flex-col gap-6 w-full lg:w-1/2 xl:w-[55%] text-custom-white">
-          <div className="flex flex-col sm:flex-row sm:items-center gap-4">
+          <div className="flex flex-row items-center gap-4">
             <img
               src={italianoLogo}
               className="w-32 sm:w-40 max-w-full object-contain"
