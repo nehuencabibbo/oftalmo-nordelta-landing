@@ -14,11 +14,17 @@ export default function Profesionales() {
         Profesionales
       </h2>
       <div className="flex flex-col lg:flex-row w-full max-w-6xl gap-10 lg:gap-16 items-center lg:items-stretch">
-        <img
-          src={mamus}
-          className="w-full max-w-md sm:max-w-xl lg:w-1/2 xl:w-[45%] h-auto lg:h-[520px] xl:h-[560px] object-cover rounded-3xl shadow-2xl"
-          alt="Profesional principal"
-        ></img>
+        <div className="flex flex-col w-full max-w-md sm:max-w-xl lg:w-1/2 xl:w-[45%]">
+          <img
+            src={mamus}
+            className="w-full h-auto object-cover rounded-3xl shadow-2xl"
+            alt="Profesional principal"
+          ></img>
+          <p className="text-sm text-custom-white/80 italic mt-3 text-center">
+            Dr. Betty Giselle Arteaga, Medica Oftalmologa, M.N. 112049 – M.P.
+            33230
+          </p>
+        </div>
         <div className="flex flex-col gap-6 w-full lg:w-1/2 xl:w-[55%] text-custom-white">
           <div className="flex flex-col sm:flex-row sm:items-center gap-4">
             <img
@@ -30,11 +36,37 @@ export default function Profesionales() {
             </h3>
           </div>
           <div className="flex flex-col gap-3">
-            <p className="text-lg sm:text-xl leading-relaxed text-custom-white/90">
-              Con más de <span className="font-bold text-accent">dos décadas de experiencia clínica</span>, la Dra. Betty Giselle Arteaga es una autoridad en el campo de la Oftalmología en Argentina. Es experta en el manejo de pacientes con <span className="font-bold text-accent">Baja Visión</span> y lidera el programa de <span className="font-bold text-accent">Rehabilitación Visual</span> como Jefa de Servicio en el <span className="font-bold text-accent">Hospital Italiano de Buenos Aires</span>.
+            <p className="text-lg sm:text-xl leading-relaxed text-custom-white/90 text-justify">
+              Con más de{" "}
+              <span className="font-bold text-accent">
+                dos décadas de experiencia clínica
+              </span>
+              , la Dra. Betty Giselle Arteaga es una autoridad en el campo de la
+              Oftalmología en Argentina. Es experta en el manejo de pacientes
+              con <span className="font-bold text-accent">Baja Visión</span> y
+              lidera el programa de{" "}
+              <span className="font-bold text-accent">
+                Rehabilitación Visual
+              </span>{" "}
+              como Jefa de Servicio en el{" "}
+              <span className="font-bold text-accent">
+                Hospital Italiano de Buenos Aires
+              </span>
+              .
             </p>
-            <p className="text-lg sm:text-xl leading-relaxed text-custom-white/90">
-              Además de su extensa labor asistencial, la Dra. Arteaga cumple un rol académico fundamental como <span className="font-bold text-accent">Profesora</span> del Departamento de Clínica Quirúrgica en el Instituto Universitario del Hospital Italiano. Su compromiso con la excelencia y la actualización constante se refleja en su participación activa en el <span className="font-bold text-accent">Congreso Mundial de Oftalmología (WOC)</span>, donde frecuentemente presenta afiches y comparte sus conocimientos.
+            <p className="text-lg sm:text-xl leading-relaxed text-custom-white/90 text-justify">
+              Además de su extensa labor asistencial, la Dra. Arteaga cumple un
+              rol académico fundamental como{" "}
+              <span className="font-bold text-accent">Profesora</span> del
+              Departamento de Clínica Quirúrgica en el Instituto Universitario
+              del Hospital Italiano. Su compromiso con la excelencia y la
+              actualización constante se refleja en su participación activa en
+              el{" "}
+              <span className="font-bold text-accent">
+                Congreso Mundial de Oftalmología (WOC)
+              </span>
+              , donde frecuentemente presenta afiches y comparte sus
+              conocimientos.
             </p>
           </div>
           <div className="flex justify-center mt-4">
