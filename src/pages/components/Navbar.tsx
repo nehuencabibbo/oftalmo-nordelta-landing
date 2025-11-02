@@ -52,40 +52,40 @@ export default function Navbar() {
       </h1>
 
       <ul
-        className={`[&_a]:transition-all [&_a]:duration-500 text-shadow-md flex gap-10 font-semibold h-full items-center ${
+        className={`flex [&_a]:transition-all [&_a]:duration-500 text-shadow-md gap-10 font-semibold h-full items-center ${
           isScrolled ? "text-secondary" : "text-white"
         }`}
       >
-        <li className="max-md:hidden">
+        <li className="hidden min-[885px]:inline-flex">
           <a
-            className="max-md:hidden hover:opacity-70 cursor-pointer"
+            className="hover:opacity-70 cursor-pointer"
             href="#profesionales"
             onClick={(e) => scrollToSection(e, "profesionales")}
           >
             Profesionales
           </a>
         </li>
-        <li className="max-md:hidden">
+        <li className="hidden min-[885px]:inline-flex">
           <a
-            className="max-md:hidden hover:opacity-70 cursor-pointer"
+            className="hover:opacity-70 cursor-pointer"
             href="#atencion"
             onClick={(e) => scrollToSection(e, "atencion")}
           >
             Atención
           </a>
         </li>
-        <li className="max-md:hidden">
+        <li className="hidden min-[885px]:inline-flex">
           <a
-            className="max-md:hidden hover:opacity-70 cursor-pointer"
+            className="hover:opacity-70 cursor-pointer"
             href="#cobertura"
             onClick={(e) => scrollToSection(e, "cobertura")}
           >
             Cobretura
           </a>
         </li>
-        <li className="max-md:hidden">
+        <li className="hidden min-[885px]:inline-flex">
           <a
-            className="max-md:hidden hover:opacity-70 cursor-pointer"
+            className="hover:opacity-70 cursor-pointer"
             href="#ubicacion"
             onClick={(e) => scrollToSection(e, "ubicacion")}
           >
