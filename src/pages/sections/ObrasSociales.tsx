@@ -1,7 +1,7 @@
 import medicusLogo from "../../assets/medicus-logo.png";
 import osdeLogo from "../../assets/osde-logo.png";
 import omintLogo from "../../assets/omint-logo.png";
-import italianoLogo from "../../assets/italiano-logo-vertical.png";
+import italianoLogo from "../../assets/hospital-italiano-logo.png";
 import { getWhatsappContactLinkWithMessage } from "../../utils/contact";
 import { FaWhatsapp } from "react-icons/fa";
 import { WhatsappObraSocialConsultingMessage } from "../../constants";
