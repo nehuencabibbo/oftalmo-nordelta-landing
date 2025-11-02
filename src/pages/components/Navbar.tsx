@@ -80,7 +80,7 @@ export default function Navbar() {
             href="#cobertura"
             onClick={(e) => scrollToSection(e, "cobertura")}
           >
-            Cobretura
+            Cobertura
           </a>
         </li>
         <li className="hidden min-[885px]:inline-flex">

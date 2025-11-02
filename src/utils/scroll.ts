@@ -1,4 +1,4 @@
-export type section = "ubicacion" | "profesionales" | "atencion" | "cobretura"
+export type section = "ubicacion" | "profesionales" | "atencion" | "cobertura"
 
 export const getSectionYAxisOffset = (sectionId: section) => {
     switch (sectionId) {
@@ -6,6 +6,8 @@ export const getSectionYAxisOffset = (sectionId: section) => {
             return 25
         case "profesionales":
           return 35
+        case "cobertura": 
+            return 30
         default:
             throw Error(`Unexistent section ${sectionId}`)
       }
