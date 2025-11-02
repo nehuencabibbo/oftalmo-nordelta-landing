@@ -1,5 +1,8 @@
 import mamus from "../../assets/mamus-frente.png";
 import italianoLogo from "../../assets/hospital-italiano-logo.png";
+import { FaWhatsapp } from "react-icons/fa";
+import { WhatsappInitialMessage } from "../../constants";
+import { getWhatsappContactLinkWithMessage } from "../../utils/contact";
 
 export default function Profesionales() {
   return (
@@ -33,6 +36,15 @@ export default function Profesionales() {
             <p className="text-lg sm:text-xl leading-relaxed text-custom-white/90">
               Además de su extensa labor asistencial, la Dra. Arteaga cumple un rol académico fundamental como <span className="font-bold text-accent">Profesora</span> del Departamento de Clínica Quirúrgica en el Instituto Universitario del Hospital Italiano. Su compromiso con la excelencia y la actualización constante se refleja en su participación activa en el <span className="font-bold text-accent">Congreso Mundial de Oftalmología (WOC)</span>, donde frecuentemente presenta afiches y comparte sus conocimientos.
             </p>
+          </div>
+          <div className="flex justify-center mt-4">
+            <a
+              href={getWhatsappContactLinkWithMessage(WhatsappInitialMessage)}
+              className="cta-button inline-flex items-center justify-center gap-2 px-6 py-3 text-lg"
+            >
+              <FaWhatsapp className="w-6 h-6" />
+              <span>Saque Turno Ahora</span>
+            </a>
           </div>
         </div>
       </div>
