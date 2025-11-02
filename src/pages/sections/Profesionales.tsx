@@ -28,22 +28,10 @@ export default function Profesionales() {
           </div>
           <div className="flex flex-col gap-3">
             <p className="text-lg sm:text-xl leading-relaxed text-custom-white/90">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
-              ipsum molestiae, sunt corporis nobis animi numquam nihil
-              doloremque. Temporibus officiis facilis labore vero odio, ab
-              obcaecati laborum corrupti eligendi voluptas.
+              Con más de <span className="font-bold text-accent">dos décadas de experiencia clínica</span>, la Dra. Betty Giselle Arteaga es una autoridad en el campo de la Oftalmología en Argentina. Es experta en el manejo de pacientes con <span className="font-bold text-accent">Baja Visión</span> y lidera el programa de <span className="font-bold text-accent">Rehabilitación Visual</span> como Jefa de Servicio en el <span className="font-bold text-accent">Hospital Italiano de Buenos Aires</span>.
             </p>
             <p className="text-lg sm:text-xl leading-relaxed text-custom-white/90">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
-              ipsum molestiae, sunt corporis nobis animi numquam nihil
-              doloremque. Temporibus officiis facilis labore vero odio, ab
-              obcaecati laborum corrupti eligendi voluptas.
-            </p>
-            <p className="text-lg sm:text-xl leading-relaxed text-custom-white/90">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
-              ipsum molestiae, sunt corporis nobis animi numquam nihil
-              doloremque. Temporibus officiis facilis labore vero odio, ab
-              obcaecati laborum corrupti eligendi voluptas.
+              Además de su extensa labor asistencial, la Dra. Arteaga cumple un rol académico fundamental como <span className="font-bold text-accent">Profesora</span> del Departamento de Clínica Quirúrgica en el Instituto Universitario del Hospital Italiano. Su compromiso con la excelencia y la actualización constante se refleja en su participación activa en el <span className="font-bold text-accent">Congreso Mundial de Oftalmología (WOC)</span>, donde frecuentemente presenta afiches y comparte sus conocimientos.
             </p>
           </div>
         </div>
