@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import { WhatsappInitialMessage } from "../../constants";
 import { getWhatsappContactLinkWithMessage } from "../../utils/contact";
+import { FaWhatsapp } from "react-icons/fa";
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -85,8 +86,9 @@ export default function Navbar() {
         <li>
           <a
             href={getWhatsappContactLinkWithMessage(WhatsappInitialMessage)}
-            className="max-md:align-center cta-button"
+            className="max-md:align-center cta-button flex gap-1"
           >
+           <FaWhatsapp className="w-5 h-5" /> 
             Sacar Turno
           </a>
         </li>

@@ -57,7 +57,7 @@ export default function Footer() {
   ];
 
   return (
-    <footer className="w-full bg-secondary border-border text-custom-white">
+    <footer className="w-full bg-secondary text-custom-white">
       <div className="max-w-7xl mx-auto px-6 md:px-10 py-6 md:py-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 items-start gap-8 md:gap-12">
         <div className="flex flex-col gap-5 max-w-lg md:flex-1">
           <div className="flex flex-col">
@@ -133,7 +133,7 @@ export default function Footer() {
               href={whatsappHref}
               target="_blank"
               rel="noreferrer"
-              className="cta-button bg-primary! inline-flex items-center justify-center gap-2"
+              className="cta-button inline-flex items-center justify-center gap-2"
             >
               <FaWhatsapp className="w-5 h-5" />
               <span>Sacar turno</span>
