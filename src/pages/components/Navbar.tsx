@@ -69,7 +69,7 @@ export default function Navbar() {
           <a
             className="max-md:hidden hover:opacity-70 cursor-pointer"
             href="#atencion"
-            onClick={(e) => scrollToSection(e, "cobertura")}
+            onClick={(e) => scrollToSection(e, "atencion")}
           >
             Atención
           </a>
@@ -78,7 +78,7 @@ export default function Navbar() {
           <a
             className="max-md:hidden hover:opacity-70 cursor-pointer"
             href="#cobertura"
-            onClick={(e) => scrollToSection(e, "atencion")}
+            onClick={(e) => scrollToSection(e, "cobertura")}
           >
             Cobretura
           </a>
@@ -97,7 +97,7 @@ export default function Navbar() {
             href={getWhatsappContactLinkWithMessage(WhatsappInitialMessage)}
             className="max-md:align-center cta-button flex gap-1"
           >
-           <FaWhatsapp className="w-5 h-5" /> 
+            <FaWhatsapp className="w-5 h-5" />
             Sacar Turno
           </a>
         </li>

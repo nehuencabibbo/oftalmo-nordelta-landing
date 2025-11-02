@@ -15,8 +15,8 @@ const coverageLogos = [
 
 export default function ObrasSociales() {
   return (
-    <section className="w-full bg-secondary px-6 py-12">
-      <div className="mx-auto flex w-full max-w-6xl flex-col items-center gap-12 text-center md:flex-row md:items-start md:justify-between md:text-left">
+    <section id="cobertura" className="w-full bg-secondary px-6 py-12">
+      <div className="mx-auto flex w-full max-w-6xl flex-col items-center gap-8 md:gap-12 text-center md:flex-row md:items-start md:justify-between md:text-left">
         <div className="flex flex-col md:self-stretch">
           <p className="flex max-w-xl flex-col items-center gap-2 md:gap-3 text-5xl text-shadow-md font-semibold text-center md:items-start md:text-left">
             <span className="block leading-12">
@@ -35,22 +35,22 @@ export default function ObrasSociales() {
             href={getWhatsappContactLinkWithMessage(
               WhatsappObraSocialConsultingMessage
             )}
-            className="cta-button mt-10 md:mt-12 self-center inline-flex items-center justify-center gap-2 px-6 py-3 text-lg"
+            className="cta-button mt-10 md:mt-12 self-center items-center justify-center gap-2 px-6 py-3 text-lg hidden! min-[1121px]:inline-flex!"
           >
             <FaWhatsapp className="w-6 h-6" />
             <span>Consulte por la suya</span>
           </a>
         </div>
 
-        <div className="w-full max-w-xl mx-auto">
-          <p className="mb-4 text-lg font-medium text-white md:text-center">
+        <div className="w-full max-w-xl mx-auto flex flex-col">
+          <p className="mb-4 text-lg font-medium text-custom-white md:text-center italic">
             Algunas de ellas...
           </p>
           <div className="grid w-full grid-cols-2 gap-8">
             {coverageLogos.map(({ src, alt }) => (
               <div
                 key={alt}
-                className="flex min-h-[140px] w-full items-center justify-center rounded-xl bg-white p-8 shadow-lg transition-transform duration-200 ease-out hover:-translate-y-1 hover:scale-105 hover:shadow-xl"
+                className="flex min-h-[140px] w-full items-center justify-center rounded-xl bg-custom-white p-8 shadow-lg transition-transform duration-200 ease-out hover:-translate-y-1 hover:scale-105 hover:shadow-xl"
               >
                 <img
                   src={src}
@@ -60,6 +60,16 @@ export default function ObrasSociales() {
               </div>
             ))}
           </div>
+          <a
+            href={getWhatsappContactLinkWithMessage(
+              WhatsappObraSocialConsultingMessage
+            )}
+            aria-hidden="true"
+            className="cta-button self-center mx-auto mt-10 min-[1121px]:hidden! items-center justify-center gap-2 px-6 py-3 text-lg"
+          >
+            <FaWhatsapp className="w-6 h-6" />
+            <span>Consulte por la suya</span>
+          </a>
         </div>
       </div>
     </section>
