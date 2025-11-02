@@ -7,6 +7,6 @@ export const getSectionYAxisOffset = (sectionId: section) => {
         case "profesionales":
           return 35
         default:
-            return 0
+            throw Error(`Unexistent section ${sectionId}`)
       }
 }
