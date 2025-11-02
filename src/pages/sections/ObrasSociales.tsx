@@ -2,6 +2,9 @@ import medicusLogo from "../../assets/medicus-logo.png";
 import osdeLogo from "../../assets/osde-logo.png";
 import omintLogo from "../../assets/omint-logo.png";
 import italianoLogo from "../../assets/italiano-logo-vertical.png";
+import { getWhatsappContactLinkWithMessage } from "../../utils/contact";
+import { FaWhatsapp } from "react-icons/fa";
+import { WhatsappObraSocialConsultingMessage } from "../../constants";
 
 const coverageLogos = [
   { src: medicusLogo, alt: "Cobertura Medicus" },
@@ -14,20 +17,33 @@ export default function ObrasSociales() {
   return (
     <section className="w-full bg-secondary px-6 py-12">
       <div className="mx-auto flex w-full max-w-6xl flex-col items-center gap-12 text-center md:flex-row md:items-start md:justify-between md:text-left">
-        <p className="flex max-w-xl flex-col items-center gap-4 text-5xl text-shadow-md font-semibold text-center md:items-start md:text-left">
-          <span className="block">
-            Atendemos <span className="text-accent">Privados</span>
-          </span>
-          <span className="block leading-15">y Aceptamos mas de</span>
-          <span className="block">
-            <span className="text-accent leading-15">
-              120 Obras Sociales y Prepagas!
+        <div className="flex flex-col md:self-stretch">
+          <p className="flex max-w-xl flex-col items-center gap-2 md:gap-3 text-5xl text-shadow-md font-semibold text-center md:items-start md:text-left">
+            <span className="block leading-12">
+              Atendemos <span className="text-accent">Privados</span>
             </span>
-          </span>
-        </p>
+            <span className="block leading-12 md:leading-15">
+              y Aceptamos mas de
+            </span>
+            <span className="block">
+              <span className="text-accent leading-12 md:leading-15">
+                120 Obras Sociales y Prepagas!
+              </span>
+            </span>
+          </p>
+          <a
+            href={getWhatsappContactLinkWithMessage(
+              WhatsappObraSocialConsultingMessage
+            )}
+            className="cta-button mt-10 md:mt-12 self-center inline-flex items-center justify-center gap-2 px-6 py-3 text-lg"
+          >
+            <FaWhatsapp className="w-6 h-6" />
+            <span>Consulte por la suya</span>
+          </a>
+        </div>
 
-        <div className="w-full max-w-xl mx-auto md:mx-0">
-          <p className="mb-4 text-lg font-medium text-white">
+        <div className="w-full max-w-xl mx-auto">
+          <p className="mb-4 text-lg font-medium text-white md:text-center">
             Algunas de ellas...
           </p>
           <div className="grid w-full grid-cols-2 gap-8">
