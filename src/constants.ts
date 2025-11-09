@@ -7,4 +7,4 @@ export const WhatsappObraSocialConsultingMessage =
   "Buenos días! Vengo de la página web y queria consultar si atendian: ";
 
 export const OpeningDate = new Date(2014, 10, 5);
-export const MamusWorkStartDate = new Date(200, 11, 9);
+export const MamusWorkStartDate = new Date(2000, 11, 9);
