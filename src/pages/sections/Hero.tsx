@@ -1,4 +1,5 @@
 import consultorioPano from "../../assets/consultorio-panoramica-gemini-text-removal.jpg";
+import { MamusWorkStartDate, OpeningDate } from "../../constants";
 
 export default function Hero() {
   return (
@@ -21,10 +22,14 @@ export default function Hero() {
         </h1>
         <p className="text-shadow-lg text-md max-[32rem]:text-sm tracking-wide px-15 sm:px-30 xl:px-35">
           Cuidando la visión de nuestros pacientes hace más de{" "}
-          <span className="font-bold text-accent">12 años</span>, respaldados
-          por profesionales con más de{" "}
-          <span className="font-bold text-accent">25 años</span> de experiencia
-          en el sector.
+          <span className="font-bold text-accent">
+            {new Date().getFullYear() - OpeningDate.getFullYear()} años
+          </span>
+          , respaldados por profesionales con más de{" "}
+          <span className="font-bold text-accent">
+            {new Date().getFullYear() - MamusWorkStartDate.getFullYear()} años
+          </span>{" "}
+          de experiencia en el sector.
         </p>
       </div>
     </section>
