@@ -41,18 +41,20 @@ export default function Profesionales() {
               <span className="font-bold text-accent">
                 dos décadas de experiencia clínica
               </span>
-              , la Dra. Betty Giselle Arteaga es una autoridad en el campo de la
-              Oftalmología en Argentina. Es experta en el manejo de pacientes
-              con <span className="font-bold text-accent">Baja Visión</span> y
-              lidera el programa de{" "}
+              , la Dra. Betty Giselle Arteaga es una renombrada médica
+              especialista y cirujana oftalmóloga. Es experta en el manejo de
+              pacientes con{" "}
+              <span className="font-bold text-accent">Baja Visión</span> y
+              lidera la Sección de Baja Visión y{" "}
               <span className="font-bold text-accent">
                 Rehabilitación Visual
               </span>{" "}
-              como Jefa de Servicio en el{" "}
+              del Servicio de Oftalmología del{" "}
               <span className="font-bold text-accent">
                 Hospital Italiano de Buenos Aires
               </span>
-              .
+              . Sus intereses incluyen además la cirugía de cataratas, el
+              implante de lentes intraoculares y el manejo del ojo seco.
             </p>
             <p className="text-lg sm:text-xl leading-relaxed text-custom-white/90 text-justify">
               Además de su extensa labor asistencial, la Dra. Arteaga cumple un

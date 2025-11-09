@@ -38,16 +38,13 @@ export default function Ubicacion() {
                 title="Ubicación de la clínica"
                 className="absolute inset-0 h-full w-full grayscale-30"
               />
-
-              <div className="absolute bottom-6 left-1/2 -translate-x-1/2 cta-button z-10">
-                <button
-                  onClick={openInMaps}
-                  className="flex justify-center items-center hover:cursor-pointer"
-                >
-                  <Navigation className="w-5 h-5 mr-2" />
-                  Abrir en Google Maps
-                </button>
-              </div>
+              <button
+                onClick={openInMaps}
+                className="cta-button bg-accent!  flex justify-center items-center hover:cursor-pointer absolute bottom-6 left-1/2 -translate-x-1/2 z-10"
+              >
+                <Navigation className="w-5 h-5 mr-2" />
+                Abrir en Google Maps
+              </button>
             </div>
           </div>
 
