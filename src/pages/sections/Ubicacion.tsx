@@ -17,7 +17,7 @@ export default function Ubicacion() {
             Ubicación
           </h2>
           <p className="tracking-wide text-center text-custom-white max-w-3xl mx-auto text-md text-shadow-md">
-            Nos encontramos en {" "}
+            Nos encontramos en{" "}
             <span className="tracking-wide text-accent font-semibold">
               Pje. de las Ciencias 75, B1670 Rincón de Milberg, Provincia de
               Buenos Aires.

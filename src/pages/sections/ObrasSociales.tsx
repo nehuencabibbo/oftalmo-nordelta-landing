@@ -20,7 +20,8 @@ export default function ObrasSociales() {
         <div className="flex flex-col md:self-stretch">
           <p className="flex max-w-xl flex-col items-center gap-2 md:gap-3 text-5xl text-shadow-md font-semibold text-center md:items-start md:text-left">
             <span className="block leading-12">
-              Atendemos <span className="text-accent italic border-b-6">Privados</span>
+              Atendemos{" "}
+              <span className="text-accent italic border-b-6">Privados</span>
             </span>
             <span className="block leading-12 md:leading-15">
               y Aceptamos mas&nbsp;de
@@ -33,7 +34,7 @@ export default function ObrasSociales() {
           </p>
           <a
             href={getWhatsappContactLinkWithMessage(
-              WhatsappObraSocialConsultingMessage
+              WhatsappObraSocialConsultingMessage,
             )}
             className="cta-button mt-10 md:mt-12 self-center items-center justify-center gap-2 px-6 py-3 text-lg hidden! min-[1121px]:inline-flex!"
           >
@@ -62,7 +63,7 @@ export default function ObrasSociales() {
           </div>
           <a
             href={getWhatsappContactLinkWithMessage(
-              WhatsappObraSocialConsultingMessage
+              WhatsappObraSocialConsultingMessage,
             )}
             aria-hidden="true"
             className="cta-button self-center mx-auto mt-10 min-[1121px]:hidden! items-center justify-center gap-2 px-6 py-3 text-lg"

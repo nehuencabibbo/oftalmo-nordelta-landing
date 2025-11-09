@@ -21,7 +21,7 @@ const addressCity = "Rincón de Milberg, Provincia de Buenos Aires";
 export default function Footer() {
   const phoneDigits = PhoneNumber.replace(/\D/g, "");
   const whatsappHref = `${WhatsappLink}/${phoneDigits}?text=${encodeURIComponent(
-    WhatsappInitialMessage
+    WhatsappInitialMessage,
   )}`;
 
   const socialLinks: Array<{

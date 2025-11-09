@@ -19,7 +19,7 @@ export default function Navbar() {
 
   const scrollToSection = (
     e: React.MouseEvent<HTMLAnchorElement>,
-    sectionId: string
+    sectionId: string,
   ) => {
     e.preventDefault();
     const element = document.getElementById(sectionId);
@@ -27,7 +27,10 @@ export default function Navbar() {
       const navbarHeight = navRef.current.offsetHeight;
       const elementPosition = element.getBoundingClientRect().top;
       const offsetPosition =
-        elementPosition + window.scrollY - navbarHeight + getSectionYAxisOffset(sectionId as section);
+        elementPosition +
+        window.scrollY -
+        navbarHeight +
+        getSectionYAxisOffset(sectionId as section);
 
       window.scrollTo({
         top: offsetPosition,
