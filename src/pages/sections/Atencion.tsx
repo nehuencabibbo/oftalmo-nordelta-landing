@@ -37,9 +37,11 @@ export default function Atencion() {
   return (
     <section
       id="atencion"
-      className="flex flex-col items-center w-full py-15 bg-secondary"
+      className="flex flex-col items-center w-full py-15 gap-8 bg-secondary"
     >
-      <h2>Tratamientos</h2>
+      <h2 className="text-custom-white text-center text-4xl sm:text-5xl lg:text-6xl font-semibold text-shadow-lg">
+        Tratamientos
+      </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12 w-full text-shadow-lg px-12 md:px-20">
         {treatments.map((treatment) => (
           <div
