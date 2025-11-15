@@ -1,4 +1,4 @@
-import { Navigation, MapPin, Building2 } from "lucide-react";
+import { Navigation, MapPin, Building2, Clock } from "lucide-react";
 import consultorioImage from "../../assets/consultorio-panoramica-gemini-text-removal.jpg";
 
 export default function Ubicacion() {
@@ -12,11 +12,11 @@ export default function Ubicacion() {
       className="flex flex-col w-full min-h-screen bg-primary items-center px-6 md:px-10 pt-4 pb-6 md:pt-6 md:pb-8 gap-4"
     >
       <div className="flex flex-col gap-4 md:gap-6 w-full max-w-6xl">
-        <div className="flex flex-col gap-2">
+        <div className="flex flex-col gap-4">
           <h2 className="text-center text-custom-white text-5xl font-semibold text-shadow-md">
-            Ubicación
+            ¿Dónde estamos?
           </h2>
-          <p className="tracking-wide text-center text-custom-white max-w-3xl mx-auto text-md text-shadow-md">
+          <p className="tracking-wide text-center text-custom-white max-w-4xl mx-auto text-lg text-shadow-md">
             Nos encontramos en{" "}
             <span className="tracking-wide text-accent font-semibold">
               Pje. de las Ciencias 75, B1670 Rincón de Milberg, Provincia de
@@ -40,18 +40,17 @@ export default function Ubicacion() {
               />
               <button
                 onClick={openInMaps}
-                className="cta-button bg-accent!  flex justify-center items-center hover:cursor-pointer absolute bottom-6 left-1/2 -translate-x-1/2 z-10"
+                className="cta-button bg-accent!  flex justify-center items-center hover:cursor-pointer absolute bottom-[40%] max-[475px]:bottom-[30%] left-1/2 -translate-x-1/2 z-10"
               >
                 <Navigation className="w-5 h-5 mr-2" />
                 Abrir en Google Maps
               </button>
             </div>
           </div>
-
           <div className="flex flex-col gap-6 lg:w-[32%] lg:overflow-y-auto">
             <section className="flex flex-col gap-2 text-custom-white">
               <h3 className="text-lg font-semibold tracking-wide">
-                ¿Dónde estamos?
+                ¿Cómo encontrarnos?
               </h3>
               <div className="flex flex-col gap-4">
                 <div className="flex items-start gap-3">
@@ -69,6 +68,14 @@ export default function Ubicacion() {
                   <p className="text-sm text-custom-white/80 leading-relaxed">
                     North Coral Plaza · 4to Piso · Oficina 45.
                   </p>
+                </div>
+                <div className="flex items-center gap-3 text-custom-white/80 text-sm">
+                  <Clock className="w-5 h-5 shrink-0 text-accent" />
+                  <div className="flex flex-col">
+                    <span className="whitespace-nowrap">
+                      Lunes y Viernes · 09:00 a 20:00 hs
+                    </span>
+                  </div>
                 </div>
               </div>
             </section>

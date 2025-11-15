@@ -43,7 +43,7 @@ export default function ObrasSociales() {
                 {coverageLogos.map(({ src, alt }) => (
                   <div
                     key={alt}
-                    className="flex min-h-[140px] w-full items-center justify-center rounded-xl bg-accent/20 p-8 shadow-lg transition-transform duration-200 ease-out hover:-translate-y-1 hover:scale-105 hover:shadow-xl"
+                    className="flex min-h-[140px] w-full items-center justify-center rounded-xl bg-accent/20 p-4 shadow-lg transition-transform duration-200 ease-out hover:-translate-y-1 hover:scale-105 hover:shadow-xl"
                   >
                     <img
                       src={src}

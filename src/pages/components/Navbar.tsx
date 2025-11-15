@@ -55,11 +55,11 @@ export default function Navbar() {
       </h1>
 
       <ul
-        className={`flex [&_a]:transition-all [&_a]:duration-500 text-shadow-md gap-10 font-semibold h-full items-center ${
+        className={`text-lg flex [&_a]:transition-all [&_a]:duration-500 text-shadow-md gap-10 font-semibold h-full items-center ${
           isScrolled ? "text-secondary" : "text-white"
         }`}
       >
-        <li className="hidden min-[885px]:inline-flex">
+        <li className="hidden min-[935px]:inline-flex">
           <a
             className="hover:opacity-70 cursor-pointer"
             href="#profesionales"
@@ -68,7 +68,7 @@ export default function Navbar() {
             Profesionales
           </a>
         </li>
-        <li className="hidden min-[885px]:inline-flex">
+        <li className="hidden min-[935px]:inline-flex">
           <a
             className="hover:opacity-70 cursor-pointer"
             href="#atencion"
@@ -77,7 +77,7 @@ export default function Navbar() {
             Atención
           </a>
         </li>
-        <li className="hidden min-[885px]:inline-flex">
+        <li className="hidden min-[935px]:inline-flex">
           <a
             className="hover:opacity-70 cursor-pointer"
             href="#cobertura"
@@ -86,7 +86,7 @@ export default function Navbar() {
             Cobertura
           </a>
         </li>
-        <li className="hidden min-[885px]:inline-flex">
+        <li className="hidden min-[935px]:inline-flex">
           <a
             className="hover:opacity-70 cursor-pointer"
             href="#ubicacion"
@@ -98,7 +98,7 @@ export default function Navbar() {
         <li>
           <a
             href={getWhatsappContactLinkWithMessage(WhatsappInitialMessage)}
-            className="max-md:align-center cta-button flex gap-1"
+            className="text-md! max-md:align-center cta-button flex gap-1"
           >
             <FaWhatsapp className="w-5 h-5" />
             Sacar Turno

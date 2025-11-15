@@ -3,7 +3,7 @@ export type section = "ubicacion" | "profesionales" | "atencion" | "cobertura";
 export const getSectionYAxisOffset = (sectionId: section) => {
   switch (sectionId) {
     case "ubicacion":
-      return 25;
+      return 15;
     case "profesionales":
       return 35;
     case "cobertura":
