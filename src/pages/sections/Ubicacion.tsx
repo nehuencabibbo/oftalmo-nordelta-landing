@@ -41,7 +41,7 @@ export default function Ubicacion() {
               />
               <button
                 onClick={openInMaps}
-                className="cta-button bg-accent!  flex justify-center items-center hover:cursor-pointer absolute bottom-[40%] max-[475px]:bottom-[30%] left-1/2 -translate-x-1/2 z-10"
+                className="cta-button bg-accent!  flex justify-center items-center hover:cursor-pointer absolute max-[335px]:bottom-[15%] bottom-[25%] sm:bottom-[30%] md:bottom-[37%] lg:bottom-[44%] left-1/2 -translate-x-1/2 z-10"
               >
                 <Navigation className="w-5 h-5 mr-2" />
                 Abrir en Google Maps
