@@ -85,7 +85,7 @@ export default function Ubicacion() {
                 <img
                   src={consultorioImage}
                   alt="Vista del edificio"
-                  className="h-32 w-full object-cover"
+                  className="lg:h-40 sm:h-80 h-60 w-full object-cover"
                   loading="lazy"
                 />
               </div>
@@ -108,7 +108,7 @@ export default function Ubicacion() {
                 <img
                   src={consultorioImage}
                   alt="Entrada principal"
-                  className="h-32 w-full object-cover"
+                  className="lg:h-40 sm:h-80 h-60 w-full object-cover"
                   loading="lazy"
                 />
               </div>
