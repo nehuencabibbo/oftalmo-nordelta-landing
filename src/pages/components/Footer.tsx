@@ -107,7 +107,7 @@ export default function Footer() {
 
         <div className="flex flex-col gap-4 md:flex-1 max-w-md">
           <h4 className="text-xl font-semibold">Redes Sociales</h4>
-          <div className="grid grid-cols-2 gap-2 w-full">
+          <div className="grid grid-cols-2 gap-4 w-full">
             {socialLinks.map(
               ({ href, label, icon: Icon, iconSize = 20, comingSoon }) => {
                 if (comingSoon) {

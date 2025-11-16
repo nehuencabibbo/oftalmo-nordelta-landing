@@ -74,7 +74,7 @@ html {
   --color-custom-white: rgb(248, 249, 255);
 
   /* Extra */
-  --color-whatsapp-green: rgb(32, 186, 89);
+  --color-whatsapp-green: rgb(28, 165, 80);
   --color-whatsapp-green-muted: rgb(42, 200, 104);
   --color-whatsapp-green-strong: rgb(24, 150, 72);
 
@@ -101,11 +101,15 @@ html {
   box-shadow:
     0 4px 6px -1px rgb(0 0 0 / 0.1),
     0 2px 4px -2px rgb(0 0 0 / 0.1);
+  transition: background-color 0.3s ease;
 }
 
 .cta-button:hover {
-  opacity: 0.7;
-  transition: opacity 0.3s ease;
+  background-color: var(--color-whatsapp-green-muted);
+}
+
+.cta-button:active {
+  background-color: var(--color-whatsapp-green-strong);
 }
 
 @media (max-width: 768px) {
