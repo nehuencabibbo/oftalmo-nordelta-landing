@@ -18,47 +18,54 @@ const {
   cirugiasProcedimientos,
 } = treatmentsData;
 
-const accordionTitleSize = "text-base";
+// Accordion styling constants - change these to update all accordions at once
+const accordionTitleClass =
+  "text-left text-base text-black-tinted/90 text-shadow-sm [&[data-state=open]]:underline";
+const accordionItemClass = "border-b border-black/70";
+const accordionContentClass = "text-black-soft";
+
+// Section title styling constant - change this to update all H3 section titles at once
+const sectionTitleClass =
+  "text-black-tinted text-center text-xl sm:text-[26px] font-bold mb-4";
 
 export default function Atencion() {
   const [openValue, setOpenValue] = useState<string | undefined>(undefined);
   return (
     <section
       id="atencion"
-      className="flex flex-col items-center w-full py-15 gap-8 bg-secondary"
+      className="flex flex-col items-center w-full py-10 gap-10 bg-secondary"
     >
-      <div className="flex flex-col items-center gap-2">
-        <h2 className="text-custom-white text-center text-3xl sm:text-5xl lg:text-6xl font-semibold text-shadow-lg">
-          Algunos de Nuestros Estudios
+      <div className="flex flex-col items-center gap-3">
+        <h2 className="text-white-soft text-center text-3xl sm:text-5xl lg:text-6xl font-semibold text-shadow-lg">
+          Algunas de Nuestras Prestaciones
         </h2>
-        <p className="text-custom-white/70 text-center text-sm sm:text-base max-w-4xl px-20">
-          Estudios especializados, servicios generales, pruebas de visión de
-          colores, tratamiento de patologías oculares y cirugías. Consulte con
-          nuestro equipo para más información.
+        <p className="text-white-soft/70 text-center text-sm sm:text-lg max-w-4xl px-15">
+          Nuestro centro cuenta con la mejor tecnología en equipamiento de
+          diagnóstico y tratamiento.
         </p>
       </div>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 w-full max-w-7xl px-4">
         <div className="flex flex-col gap-8">
           <div className="bg-custom-white rounded-lg p-6 shadow-md">
             <div className="flex flex-col">
-              <h3 className="text-custom-white text-center text-xl sm:text-2xl font-semibold text-shadow-md mb-4">
-                Estudios Especializados
-              </h3>
+              <h3 className={sectionTitleClass}>Estudios Especializados</h3>
               <Accordion
                 type="single"
                 collapsible
-                className="text-custom-white w-full"
+                className="text-primary w-full"
                 value={openValue}
                 onValueChange={setOpenValue}
               >
                 {estudios.map((estudio) => (
-                  <AccordionItem key={estudio.id} value={estudio.id}>
-                    <AccordionTrigger
-                      className={`text-left ${accordionTitleSize}`}
-                    >
+                  <AccordionItem
+                    key={estudio.id}
+                    value={estudio.id}
+                    className={accordionItemClass}
+                  >
+                    <AccordionTrigger className={accordionTitleClass}>
                       {estudio.nombre}
                     </AccordionTrigger>
-                    <AccordionContent className="text-custom-white/90">
+                    <AccordionContent className={accordionContentClass}>
                       <p className="mb-3">{estudio.descripcion}</p>
                       {estudio.aplicaciones && (
                         <div className="mt-4">
@@ -84,24 +91,24 @@ export default function Atencion() {
           </div>
           <div className="bg-custom-white rounded-lg p-6 shadow-md">
             <div className="flex flex-col">
-              <h3 className="text-custom-white text-center text-xl sm:text-2xl font-semibold text-shadow-md mb-4">
-                Cirugías y Procedimientos
-              </h3>
+              <h3 className={sectionTitleClass}>Cirugías y Procedimientos</h3>
               <Accordion
                 type="single"
                 collapsible
-                className="text-custom-white w-full"
+                className="text-primary w-full"
                 value={openValue}
                 onValueChange={setOpenValue}
               >
                 {cirugiasProcedimientos.map((cirugia) => (
-                  <AccordionItem key={cirugia.id} value={cirugia.id}>
-                    <AccordionTrigger
-                      className={`text-left ${accordionTitleSize}`}
-                    >
+                  <AccordionItem
+                    key={cirugia.id}
+                    value={cirugia.id}
+                    className={accordionItemClass}
+                  >
+                    <AccordionTrigger className={accordionTitleClass}>
                       {cirugia.nombre}
                     </AccordionTrigger>
-                    <AccordionContent className="text-custom-white/90">
+                    <AccordionContent className={accordionContentClass}>
                       <p className="mb-3">{cirugia.descripcion}</p>
                     </AccordionContent>
                   </AccordionItem>
@@ -114,24 +121,24 @@ export default function Atencion() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             <div className="bg-custom-white rounded-lg p-6 shadow-md">
               <div className="flex flex-col">
-                <h3 className="text-custom-white text-center text-xl sm:text-2xl font-semibold text-shadow-md mb-4">
-                  Servicios Generales
-                </h3>
+                <h3 className={sectionTitleClass}>Servicios Generales</h3>
                 <Accordion
                   type="single"
                   collapsible
-                  className="text-custom-white w-full"
+                  className="text-primary w-full"
                   value={openValue}
                   onValueChange={setOpenValue}
                 >
                   {serviciosGenerales.map((servicio) => (
-                    <AccordionItem key={servicio.id} value={servicio.id}>
-                      <AccordionTrigger
-                        className={`text-left ${accordionTitleSize}`}
-                      >
+                    <AccordionItem
+                      key={servicio.id}
+                      value={servicio.id}
+                      className={accordionItemClass}
+                    >
+                      <AccordionTrigger className={accordionTitleClass}>
                         {servicio.nombre}
                       </AccordionTrigger>
-                      <AccordionContent className="text-custom-white/90">
+                      <AccordionContent className={accordionContentClass}>
                         <p className="mb-3">{servicio.descripcion}</p>
                       </AccordionContent>
                     </AccordionItem>
@@ -142,24 +149,26 @@ export default function Atencion() {
             <div className="flex flex-col gap-2 justify-between">
               <div className="bg-custom-white rounded-lg p-6 shadow-md">
                 <div className="flex flex-col">
-                  <h3 className="text-custom-white text-center text-xl sm:text-2xl font-semibold text-shadow-md mb-4">
+                  <h3 className={sectionTitleClass}>
                     Pruebas de Visión de Colores
                   </h3>
                   <Accordion
                     type="single"
                     collapsible
-                    className="text-custom-white w-full"
+                    className="text-primary w-full"
                     value={openValue}
                     onValueChange={setOpenValue}
                   >
                     {pruebasVisionColores.map((prueba) => (
-                      <AccordionItem key={prueba.id} value={prueba.id}>
-                        <AccordionTrigger
-                          className={`text-left ${accordionTitleSize}`}
-                        >
+                      <AccordionItem
+                        key={prueba.id}
+                        value={prueba.id}
+                        className={accordionItemClass}
+                      >
+                        <AccordionTrigger className={accordionTitleClass}>
                           {prueba.nombre}
                         </AccordionTrigger>
-                        <AccordionContent className="text-custom-white/90">
+                        <AccordionContent className={accordionContentClass}>
                           <p className="mb-3">{prueba.descripcion}</p>
                         </AccordionContent>
                       </AccordionItem>
@@ -169,24 +178,24 @@ export default function Atencion() {
               </div>
               <div className="bg-custom-white rounded-lg p-6 shadow-md">
                 <div className="flex flex-col">
-                  <h3 className="text-custom-white text-center text-xl sm:text-2xl font-semibold text-shadow-md mb-4">
-                    Patologías Oculares
-                  </h3>
+                  <h3 className={sectionTitleClass}>Patologías Oculares</h3>
                   <Accordion
                     type="single"
                     collapsible
-                    className="text-custom-white w-full"
+                    className="text-primary w-full"
                     value={openValue}
                     onValueChange={setOpenValue}
                   >
                     {patologiasOculares.map((patologia) => (
-                      <AccordionItem key={patologia.id} value={patologia.id}>
-                        <AccordionTrigger
-                          className={`text-left ${accordionTitleSize}`}
-                        >
+                      <AccordionItem
+                        key={patologia.id}
+                        value={patologia.id}
+                        className={accordionItemClass}
+                      >
+                        <AccordionTrigger className={accordionTitleClass}>
                           {patologia.nombre}
                         </AccordionTrigger>
-                        <AccordionContent className="text-custom-white/90">
+                        <AccordionContent className={accordionContentClass}>
                           <p className="mb-3">{patologia.descripcion}</p>
                           {patologia.tratamiento && (
                             <div className="mt-4">
@@ -202,20 +211,20 @@ export default function Atencion() {
               </div>
             </div>
           </div>
-          <div className="bg-primary/30 rounded-lg p-6 shadow-md flex flex-col items-center justify-center gap-6 flex-1">
-            <div className="flex flex-col items-center justify-center gap-3">
-              <h3 className="text-custom-white text-center text-5xl font-semibold text-shadow-md ">
-                ¿No encontró el estudio que buscaba?
+          <div className=" rounded-2xl p-6 flex flex-row items-center ustify-between flex-1">
+            <div className="flex flex-col gap-2 flex-1 items-center">
+              <h3 className="text-white-soft whitspace-nowrap text-center text-2xl sm:text-3xl lg:text-[40px] font-semibold text-shadow-md">
+                ¿No encontró lo que buscaba?
               </h3>
-              <p className="text-custom-white/70 text-center text-base sm:text-lg">
-                Estamos aquí para ayudarte
+              <p className="text-white-soft/70  text-base sm:text-lg">
+                Estamos aquí para ayudarle
               </p>
             </div>
             <a
               href={getWhatsappContactLinkWithMessage(
                 WhatsappServicioConsultingMessage,
               )}
-              className="cta-button flex gap-1 items-center"
+              className="cta-button flex gap-1 items-center whitespace-nowrap"
             >
               <FaWhatsapp className="w-5 h-5" />
               Consulte aqui

@@ -54,40 +54,37 @@ html {
   --sidebar-accent-foreground: oklch(0.205 0 0);
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
+
+  /* ================ MIOS ====================== */
+  --white-bg: rgb(230, 235, 255); /* rgb(248, 249, 253); */
+  --white-soft: rgb(245, 247, 255);
+
+  /* Black neutrals */
+  --black-bg: rgb(20, 24, 39);
+  --black-soft: rgb(34, 36, 46);
+  --black-tinted: rgb(26, 37, 66);
 }
 
 @theme {
+  /* Main palette */
   --color-primary: rgb(60, 70, 123);
   --color-secondary: rgb(80, 88, 156);
   --color-tertiary: rgb(99, 108, 203);
   --color-accent: rgb(110, 140, 251);
-  --color-custom-white: var(--white-87);
+  --color-custom-white: rgb(248, 249, 255);
+
+  /* Extra */
   --color-whatsapp-green: rgb(32, 186, 89);
-}
 
-.carrousel-card {
-  background-color: var(--color-custom-white);
-  box-shadow:
-    0 20px 25px -5px rgb(0 0 0 / 0.1),
-    0 8px 10px -6px rgb(0 0 0 / 0.1);
-  border-radius: 1rem;
-  min-width: 300px;
-  height: 10rem;
-  flex: 1 0 auto;
-}
+  /* White and black*/
+  --color-white-bg: var(--white-bg);
+  --color-white-soft: var(--white-soft);
+  --color-black-bg: var(--black-bg);
+  --color-black-soft: var(--black-soft);
+  --color-black-tinted: var(--black-tinted);
 
-/* Infinite Carousel Animation */
-@keyframes scroll {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(-100%); /* width of 5 items + gaps */
-  }
-}
-
-.animate-scroll {
-  animation: scroll 20s linear infinite;
+  /* Accordion borders */
+  --color-accordion-border: var(--black-soft);
 }
 
 .cta-button {
