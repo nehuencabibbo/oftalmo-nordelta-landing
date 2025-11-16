@@ -95,7 +95,7 @@ export default function Navbar() {
       }`}
     >
       <a
-        className={`opacity-90 text-shadow-md text-xl sm:text-2xl font-bold transition-colors duration-500 ${
+        className={`opacity-90 text-shadow-md text-xl min-[425px]:text-2xl font-bold transition-colors duration-500 ${
           isScrolled ? "text-primary" : "text-white"
         }`}
         onClick={(e) => scrollToSection(e, "hero")}
@@ -164,7 +164,7 @@ export default function Navbar() {
           className="cta-button flex gap-1 text-md px-3 py-1.5"
         >
           <FaWhatsapp className="w-5 h-5" />
-          <span className="hidden min-[390px]:inline">Sacar Turno</span>
+          <span className="hidden min-[425px]:inline">Sacar Turno</span>
         </a>
         <Sheet open={isSheetOpen} onOpenChange={setIsSheetOpen}>
           <SheetTrigger asChild>
