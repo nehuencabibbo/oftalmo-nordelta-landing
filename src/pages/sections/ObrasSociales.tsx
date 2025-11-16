@@ -20,7 +20,7 @@ export default function ObrasSociales() {
               <p className="flex max-w-xl flex-col items-center gap-2 md:gap-3 text-[2.5rem] sm:text-5xl text-shadow-md font-semibold text-center text-black lg:items-start lg:text-left">
                 <span className="inline-block leading-13">
                   Atendemos{" "}
-                  <span className="inline-block text-accent italic border-b-5">
+                  <span className="inline-block text-accent italic border-b-[5px] border-accent">
                     Privados
                   </span>
                 </span>
@@ -28,7 +28,7 @@ export default function ObrasSociales() {
                   y&nbsp;Aceptamos mas&nbsp;de
                 </span>
                 <span className="inline-block">
-                  <span className="text-accent leading-12 sm:leading-17 italic border-b-5">
+                  <span className="text-accent leading-12 sm:leading-17 italic border-b-[5px] border-accent">
                     120 Obras Sociales y Prepagas!
                   </span>
                 </span>

@@ -46,13 +46,15 @@ export default function Navbar() {
         isScrolled ? "bg-white shadow-md" : "bg-transparent"
       }`}
     >
-      <h1
+      <a
         className={`opacity-90 text-shadow-md text-xl sm:text-2xl font-bold transition-colors duration-500 ${
           isScrolled ? "text-primary" : "text-white"
         }`}
+        onClick={(e) => scrollToSection(e, "hero")}
+        style={{ cursor: "pointer", textDecoration: "none" }}
       >
         Oftalmo Nordelta
-      </h1>
+      </a>
 
       <ul
         className={`text-lg flex [&_a]:transition-all [&_a]:duration-500 text-shadow-md gap-10 font-semibold h-full items-center ${
