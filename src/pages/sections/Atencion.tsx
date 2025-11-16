@@ -36,10 +36,10 @@ export default function Atencion() {
       className="flex flex-col items-center w-full py-10 gap-10 bg-secondary"
     >
       <div className="flex flex-col items-center gap-3">
-        <h2 className="text-white-soft text-center text-3xl sm:text-5xl lg:text-6xl font-semibold text-shadow-lg">
+        <h2 className="text-white-soft text-center text-5xl lg:text-6xl font-semibold text-shadow-lg">
           Algunas de Nuestras Prestaciones
         </h2>
-        <p className="text-white-soft/70 text-center text-sm sm:text-lg max-w-4xl px-15">
+        <p className="text-white-soft/70 text-center text-md lg:text-lg max-w-4xl px-15">
           Nuestro centro cuenta con la mejor tecnología en equipamiento de
           diagnóstico y tratamiento.
         </p>
@@ -146,7 +146,7 @@ export default function Atencion() {
                 </Accordion>
               </div>
             </div>
-            <div className="flex flex-col gap-2 justify-between">
+            <div className="flex flex-col gap-8 justify-between">
               <div className="bg-custom-white rounded-lg p-6 shadow-md">
                 <div className="flex flex-col">
                   <h3 className={sectionTitleClass}>
@@ -211,9 +211,9 @@ export default function Atencion() {
               </div>
             </div>
           </div>
-          <div className=" rounded-2xl p-6 flex flex-row items-center ustify-between flex-1">
-            <div className="flex flex-col gap-2 flex-1 items-center">
-              <h3 className="text-white-soft whitspace-nowrap text-center text-2xl sm:text-3xl lg:text-[40px] font-semibold text-shadow-md">
+          <div className=" rounded-2xl p-6 flex flex-col lg:flex-row items-center lg:justify-between gap-6 lg:gap-6 flex-1">
+            <div className="flex flex-col flex-1 items-center">
+              <h3 className="text-white-soft text-center text-[40px] font-semibold text-shadow-md leading-tight">
                 ¿No encontró lo que buscaba?
               </h3>
               <p className="text-white-soft/70  text-base sm:text-lg">
