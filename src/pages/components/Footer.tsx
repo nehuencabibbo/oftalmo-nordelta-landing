@@ -13,6 +13,7 @@ import {
   FaFacebook,
   FaTiktok,
 } from "react-icons/fa";
+import qrContactImage from "../../assets/qr-contacto.jpeg";
 
 const email = "contacto@oftalmonordelta.com";
 const addressLine = "Pje. de las Ciencias 75";
@@ -58,13 +59,13 @@ export default function Footer() {
 
   return (
     <footer className="w-full bg-secondary text-custom-white">
-      <div className="max-w-7xl mx-auto px-6 md:px-10 py-6 md:py-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 items-start gap-8 md:gap-12">
+      <div className="max-w-8xl mx-auto px-6 md:px-10 py-6 md:py-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 items-start gap-8 md:gap-12">
         <div className="flex flex-col gap-5 max-w-lg md:flex-1">
           <div className="flex flex-col">
-            <h3 className="text-2xl font-semibold text-shadow-md">
+            <h3 className="text-xl font-semibold text-shadow-md">
               Oftalmo Nordelta
             </h3>
-            <p className="text-custom-white/70 leading-relaxed whitespace-nowrap">
+            <p className="text-base text-custom-white/70 leading-relaxed whitespace-nowrap">
               Atención oftalmológica integral.
             </p>
           </div>
@@ -138,6 +139,18 @@ export default function Footer() {
               <FaWhatsapp className="w-5 h-5" />
               <span>Sacar turno</span>
             </a>
+          </div>
+        </div>
+
+        <div className="flex flex-col gap-4 md:flex-1 max-w-sm">
+          <h4 className="text-xl font-semibold">Agendar Contacto</h4>
+          <div className="flex justify-left">
+            <img
+              src={qrContactImage}
+              alt="QR código para agendar contacto"
+              className="w-25 h-25 object-contain"
+              loading="lazy"
+            />
           </div>
         </div>
       </div>

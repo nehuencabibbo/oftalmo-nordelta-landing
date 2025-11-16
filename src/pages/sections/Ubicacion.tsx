@@ -1,5 +1,6 @@
 import { Navigation, MapPin, Building2, Clock } from "lucide-react";
-import consultorioImage from "../../assets/consultorio-panoramica-gemini-text-removal.jpg";
+import consultorioImage from "../../assets/consultorio-panoramica.jpeg";
+import consultorioEntradaImage from "../../assets/consultorio-entrada.jpeg";
 
 export default function Ubicacion() {
   const openInMaps = () => {
@@ -55,7 +56,7 @@ export default function Ubicacion() {
               <div className="flex flex-col gap-4">
                 <div className="flex items-start gap-3">
                   <MapPin size={22} className="shrink-0 text-accent mt-0.5" />
-                  <p className="text-sm text-custom-white/80 leading-relaxed">
+                  <p className="text-base text-custom-white/80 leading-relaxed">
                     Pje. de las Ciencias 75, B1670 Rincón de Milberg, Provincia
                     de Buenos Aires.
                   </p>
@@ -65,11 +66,11 @@ export default function Ubicacion() {
                     size={22}
                     className="shrink-0 text-accent mt-0.5"
                   />
-                  <p className="text-sm text-custom-white/80 leading-relaxed">
+                  <p className="text-base text-custom-white/80 leading-relaxed">
                     North Coral Plaza · 4to Piso · Oficina 45.
                   </p>
                 </div>
-                <div className="flex items-center gap-3 text-custom-white/80 text-sm">
+                <div className="flex items-center gap-3 text-custom-white/80 text-base">
                   <Clock className="w-5 h-5 shrink-0 text-accent" />
                   <div className="flex flex-col">
                     <span className="whitespace-nowrap">
@@ -93,7 +94,7 @@ export default function Ubicacion() {
                 <h3 className="text-xl font-semibold text-custom-white tracking-wide">
                   Edificio North Coral Plaza
                 </h3>
-                <p className="text-sm text-custom-white/80 text-justify leading-relaxed">
+                <p className="text-base text-custom-white/80 text-justify leading-relaxed">
                   El edificio se encuentra ubicado en el centro comercial de
                   nordelta. Nuestras oficinas se encuentran en el{" "}
                   <span className="tracking-wide text-accent font-semibold">
@@ -106,9 +107,9 @@ export default function Ubicacion() {
             <section className="flex flex-col gap-2">
               <div className="overflow-hidden rounded-3xl">
                 <img
-                  src={consultorioImage}
+                  src={consultorioEntradaImage}
                   alt="Entrada principal"
-                  className="lg:h-40 sm:h-80 h-60 w-full object-cover"
+                  className="lg:h-40 sm:h-80 h-60 w-full object-cover object-bottom"
                   loading="lazy"
                 />
               </div>
@@ -116,7 +117,7 @@ export default function Ubicacion() {
                 <h3 className="text-xl font-semibold text-custom-white tracking-wide">
                   Entrada Principal
                 </h3>
-                <p className="text-sm text-custom-white/80 text-justify leading-relaxed">
+                <p className="text-base text-custom-white/80 text-justify leading-relaxed">
                   Esta es la entrada principal del edificio, se encuentra del
                   lado del estacionamiento. Para entrar tocar el timbre y luego
                   subir por el ascensor.

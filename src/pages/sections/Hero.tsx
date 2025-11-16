@@ -1,4 +1,4 @@
-import consultorioPano from "../../assets/consultorio-panoramica-gemini-text-removal.jpg";
+import consultorioPano from "../../assets/consultorio-panoramica.jpeg";
 import { MamusWorkStartDate, OpeningDate } from "../../constants";
 
 export default function Hero() {
@@ -29,7 +29,7 @@ export default function Hero() {
           <span className="font-bold text-accent">
             {new Date().getFullYear() - MamusWorkStartDate.getFullYear()} años
           </span>{" "}
-          de experiencia en el sector.
+          de experiencia en el sector
         </p>
       </div>
     </section>
