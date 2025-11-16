@@ -20,7 +20,7 @@ export default function Hero() {
         <h1 className="text-white-soft text-shadow-lg/20 text-8xl max-[32rem]:text-7xl font-semibold">
           Oftalmo Nordelta
         </h1>
-        <p className="text-white-soft text-shadow-lg text-lg max-[32rem]:text-md tracking-wide px-5 sm:px-20 xl:px-25">
+        <p className="text-white-soft text-shadow-lg text-lg max-[32rem]:text-base tracking-wide px-5 sm:px-20 xl:px-25">
           Cuidando la visión de nuestros pacientes hace más de{" "}
           <span className="font-bold text-accent">
             {new Date().getFullYear() - OpeningDate.getFullYear()} años

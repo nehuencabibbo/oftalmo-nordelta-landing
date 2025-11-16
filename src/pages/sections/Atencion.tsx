@@ -39,7 +39,7 @@ export default function Atencion() {
         <h2 className="text-white-soft text-center text-5xl lg:text-6xl font-semibold text-shadow-lg">
           Algunas de Nuestras Prestaciones
         </h2>
-        <p className="text-white-soft/70 text-center text-md lg:text-lg max-w-4xl px-15">
+        <p className="text-white-soft/70 text-center text-base lg:text-lg max-w-4xl px-15">
           Nuestro centro cuenta con la mejor tecnología en equipamiento de
           diagnóstico y tratamiento.
         </p>
