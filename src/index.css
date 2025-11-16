@@ -56,7 +56,7 @@ html {
   --sidebar-ring: oklch(0.708 0 0);
 
   /* ================ MIOS ====================== */
-  --white-bg: rgb(230, 235, 255); /* rgb(248, 249, 253); */
+  --white-bg: rgb(230, 235, 255);
   --white-soft: rgb(245, 247, 255);
 
   /* Black neutrals */
@@ -75,8 +75,12 @@ html {
 
   /* Extra */
   --color-whatsapp-green: rgb(32, 186, 89);
+  --color-whatsapp-green-muted: rgb(42, 200, 104);
+  --color-whatsapp-green-strong: rgb(24, 150, 72);
 
   /* White and black*/
+  /* Estoy usando el bg para cards y el soft para texto, tendria que ser al reves
+  , pero fue */
   --color-white-bg: var(--white-bg);
   --color-white-soft: var(--white-soft);
   --color-black-bg: var(--black-bg);

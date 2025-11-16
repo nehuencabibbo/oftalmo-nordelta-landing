@@ -26,50 +26,51 @@ export default function Footer() {
   )}`;
 
   const socialLinks: Array<{
-    href: string;
+    href?: string;
     label: string;
     icon: IconType;
     iconSize?: number;
+    comingSoon?: boolean;
   }> = [
     {
-      href: "https://www.youtube.com",
-      label: "YouTube",
-      icon: FaYoutube,
-      iconSize: 18,
-    },
-    {
-      href: "https://www.instagram.com",
+      href: "https://www.instagram.com/oftalmonordelta/",
       label: "Instagram",
       icon: FaInstagram,
       iconSize: 18,
     },
     {
-      href: "https://www.facebook.com",
+      href: "https://www.facebook.com/OftalmoNordelta/",
       label: "Facebook",
       icon: FaFacebook,
       iconSize: 18,
     },
     {
-      href: "https://www.tiktok.com",
+      label: "YouTube",
+      icon: FaYoutube,
+      iconSize: 18,
+      comingSoon: true,
+    },
+    {
       label: "TikTok",
       icon: FaTiktok,
       iconSize: 18,
+      comingSoon: true,
     },
   ];
 
   return (
-    <footer className="w-full bg-secondary text-custom-white">
+    <footer className="w-full bg-secondary text-white-soft">
       <div className="max-w-8xl mx-auto px-6 md:px-10 py-6 md:py-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 items-start gap-8 md:gap-12">
         <div className="flex flex-col gap-5 max-w-lg md:flex-1">
           <div className="flex flex-col">
             <h3 className="text-xl font-semibold text-shadow-md">
               Oftalmo Nordelta
             </h3>
-            <p className="text-base text-custom-white/70 leading-relaxed whitespace-nowrap">
+            <p className="text-base text-white-soft/70 leading-relaxed whitespace-nowrap">
               Atención oftalmológica integral.
             </p>
           </div>
-          <div className="flex items-start gap-3 text-custom-white/80">
+          <div className="flex items-start gap-3 text-white-soft/80">
             <MapPin className="w-5 h-5 text-accent" />
             <div className="flex flex-col text-sm">
               <span>{addressLine}</span>
@@ -82,19 +83,19 @@ export default function Footer() {
           <h4 className="text-xl font-semibold">Contacto</h4>
           <a
             href={`tel:${PhoneNumber}`}
-            className="flex items-center gap-3 text-custom-white/80 hover:text-custom-white transition-colors text-sm"
+            className="flex items-center gap-3 text-white-soft/80 hover:text-white-soft transition-colors text-sm"
           >
             <PhoneCall className="w-5 h-5 shrink-0 text-accent" />
             <span>{PhoneNumberDisplay}</span>
           </a>
           <a
             href={`mailto:${email}`}
-            className="flex items-center gap-3 text-custom-white/80 hover:text-custom-white transition-colors text-sm"
+            className="flex items-center gap-3 text-white-soft/80 hover:text-white-soft transition-colors text-sm"
           >
             <Mail className="w-5 h-5 shrink-0 text-accent" />
             <span>{email}</span>
           </a>
-          <div className="flex items-center gap-3 text-custom-white/80 text-sm">
+          <div className="flex items-center gap-3 text-white-soft/80 text-sm">
             <Clock className="w-5 h-5 shrink-0 text-accent" />
             <div className="flex flex-col">
               <span className="whitespace-nowrap">
@@ -107,25 +108,43 @@ export default function Footer() {
         <div className="flex flex-col gap-4 md:flex-1 max-w-md">
           <h4 className="text-xl font-semibold">Redes Sociales</h4>
           <div className="grid grid-cols-2 gap-2 w-full">
-            {socialLinks.map(({ href, label, icon: Icon, iconSize = 20 }) => (
-              <a
-                key={label}
-                href={href}
-                target="_blank"
-                rel="noreferrer"
-                className="flex items-center justify-center gap-1 py-2 border border-custom-white/20 rounded-full text-xs sm:text-sm text-custom-white/80 hover:border-custom-white hover:text-custom-white hover:bg-custom-white/10 transition-all w-full"
-              >
-                <Icon size={iconSize} className="shrink-0" />
-                <span>{label}</span>
-              </a>
-            ))}
+            {socialLinks.map(
+              ({ href, label, icon: Icon, iconSize = 20, comingSoon }) => {
+                if (comingSoon) {
+                  return (
+                    <div
+                      key={label}
+                      className="flex items-center justify-center gap-1 py-2 border border-white-soft/10 rounded-full text-xs sm:text-sm text-white-soft/50 cursor-not-allowed w-full relative"
+                      title="Próximamente"
+                    >
+                      <Icon size={iconSize} className="shrink-0" />
+                      <span>{label}</span>
+                      <span className="text-[10px] absolute -top-1 -right-1 bg-accent text-white-soft rounded-full px-1">
+                        Próximamente
+                      </span>
+                    </div>
+                  );
+                }
+                return (
+                  <a
+                    key={label}
+                    href={href}
+                    target="_blank"
+                    className="flex items-center justify-center gap-1 py-2 border border-white-soft/20 rounded-full text-xs sm:text-sm text-white-soft/80 hover:border-white-soft hover:text-white-soft hover:bg-white-soft/10 transition-all w-full"
+                  >
+                    <Icon size={iconSize} className="shrink-0" />
+                    <span>{label}</span>
+                  </a>
+                );
+              },
+            )}
           </div>
         </div>
 
         <div className="flex flex-col gap-5 md:flex-1 max-w-sm">
           <div className="flex flex-col gap-1">
             <h4 className="text-xl font-semibold">Sacar turno</h4>
-            <p className="text-custom-white/70 text-sm">
+            <p className="text-white-soft/70 text-sm">
               Turnos Unicamente por Whatsapp
             </p>
           </div>

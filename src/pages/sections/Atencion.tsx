@@ -46,7 +46,7 @@ export default function Atencion() {
       </div>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 w-full max-w-7xl px-4">
         <div className="flex flex-col gap-8">
-          <div className="bg-custom-white rounded-lg p-6 shadow-md">
+          <div className="bg-white-bg rounded-lg p-6 shadow-md">
             <div className="flex flex-col">
               <h3 className={sectionTitleClass}>Estudios Especializados</h3>
               <Accordion
@@ -89,7 +89,7 @@ export default function Atencion() {
               </Accordion>
             </div>
           </div>
-          <div className="bg-custom-white rounded-lg p-6 shadow-md">
+          <div className="bg-white-bg rounded-lg p-6 shadow-md">
             <div className="flex flex-col">
               <h3 className={sectionTitleClass}>Cirugías y Procedimientos</h3>
               <Accordion
@@ -119,7 +119,7 @@ export default function Atencion() {
         </div>
         <div className="flex flex-col gap-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-            <div className="bg-custom-white rounded-lg p-6 shadow-md">
+            <div className="bg-white-bg rounded-lg p-6 shadow-md">
               <div className="flex flex-col">
                 <h3 className={sectionTitleClass}>Servicios Generales</h3>
                 <Accordion
@@ -147,7 +147,7 @@ export default function Atencion() {
               </div>
             </div>
             <div className="flex flex-col gap-8 justify-between">
-              <div className="bg-custom-white rounded-lg p-6 shadow-md">
+              <div className="bg-white-bg rounded-lg p-6 shadow-md">
                 <div className="flex flex-col">
                   <h3 className={sectionTitleClass}>
                     Pruebas de Visión de Colores
@@ -176,7 +176,7 @@ export default function Atencion() {
                   </Accordion>
                 </div>
               </div>
-              <div className="bg-custom-white rounded-lg p-6 shadow-md">
+              <div className="bg-white-bg rounded-lg p-6 shadow-md">
                 <div className="flex flex-col">
                   <h3 className={sectionTitleClass}>Patologías Oculares</h3>
                   <Accordion

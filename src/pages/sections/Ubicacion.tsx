@@ -14,10 +14,10 @@ export default function Ubicacion() {
     >
       <div className="flex flex-col gap-4 md:gap-6 w-full max-w-6xl">
         <div className="flex flex-col gap-4">
-          <h2 className="text-center text-custom-white text-5xl font-semibold text-shadow-md">
+          <h2 className="text-center text-white-soft text-5xl font-semibold text-shadow-md">
             ¿Dónde estamos?
           </h2>
-          <p className="tracking-wide text-center text-custom-white max-w-4xl mx-auto text-lg text-shadow-md">
+          <p className="tracking-wide text-center text-white-soft max-w-4xl mx-auto text-lg text-shadow-md">
             Nos encontramos en{" "}
             <span className="tracking-wide text-accent font-semibold">
               Pje. de las Ciencias 75, B1670 Rincón de Milberg, Provincia de
@@ -49,14 +49,14 @@ export default function Ubicacion() {
             </div>
           </div>
           <div className="flex flex-col gap-6 lg:w-[32%] lg:overflow-y-auto">
-            <section className="flex flex-col gap-2 text-custom-white">
+            <section className="flex flex-col gap-2 text-white-soft">
               <h3 className="text-lg font-semibold tracking-wide">
                 ¿Cómo encontrarnos?
               </h3>
               <div className="flex flex-col gap-4">
                 <div className="flex items-start gap-3">
                   <MapPin size={22} className="shrink-0 text-accent mt-0.5" />
-                  <p className="text-base text-custom-white/80 leading-relaxed">
+                  <p className="text-base text-white-soft/80 leading-relaxed">
                     Pje. de las Ciencias 75, B1670 Rincón de Milberg, Provincia
                     de Buenos Aires.
                   </p>
@@ -66,11 +66,11 @@ export default function Ubicacion() {
                     size={22}
                     className="shrink-0 text-accent mt-0.5"
                   />
-                  <p className="text-base text-custom-white/80 leading-relaxed">
+                  <p className="text-base text-white-soft/80 leading-relaxed">
                     North Coral Plaza · 4to Piso · Oficina 45.
                   </p>
                 </div>
-                <div className="flex items-center gap-3 text-custom-white/80 text-base">
+                <div className="flex items-center gap-3 text-white-soft/80 text-base">
                   <Clock className="w-5 h-5 shrink-0 text-accent" />
                   <div className="flex flex-col">
                     <span className="whitespace-nowrap">
@@ -91,10 +91,10 @@ export default function Ubicacion() {
                 />
               </div>
               <div className="flex flex-col gap-1">
-                <h3 className="text-xl font-semibold text-custom-white tracking-wide">
+                <h3 className="text-xl font-semibold text-white-soft tracking-wide">
                   Edificio North Coral Plaza
                 </h3>
-                <p className="text-base text-custom-white/80 text-justify leading-relaxed">
+                <p className="text-base text-white-soft/80 text-justify leading-relaxed">
                   El edificio se encuentra ubicado en el centro comercial de
                   nordelta. Nuestras oficinas se encuentran en el{" "}
                   <span className="tracking-wide text-accent font-semibold">
@@ -114,10 +114,10 @@ export default function Ubicacion() {
                 />
               </div>
               <div className="flex flex-col gap-1">
-                <h3 className="text-xl font-semibold text-custom-white tracking-wide">
+                <h3 className="text-xl font-semibold text-white-soft tracking-wide">
                   Entrada Principal
                 </h3>
-                <p className="text-base text-custom-white/80 text-justify leading-relaxed">
+                <p className="text-base text-white-soft/80 text-justify leading-relaxed">
                   Esta es la entrada principal del edificio, se encuentra del
                   lado del estacionamiento. Para entrar tocar el timbre y luego
                   subir por el ascensor.
