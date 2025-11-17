@@ -5,15 +5,28 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="w-full h-screen flex items-start justify-center pt-72"
+      className="w-full flex items-center justify-center relative overflow-hidden"
       style={{
-        backgroundImage: `url(${consultorioPano})`,
-        backgroundSize: "cover",
-        backgroundPosition: "center",
+        height: "100dvh", // Dynamic viewport height - accounts for mobile browser UI
+        minHeight: "100vh", // Fallback for older browsers
       }}
     >
+      {/* Background Image */}
+      <img
+        src={consultorioPano}
+        alt="Consultorio Oftalmo Nordelta"
+        className="absolute inset-0 w-full h-full object-cover"
+        loading="eager"
+      />
+
       {/* Primary Color Overlay with Blur Effect */}
-      <div className="absolute inset-0 bg-primary/60 backdrop-blur-sm" />
+      <div
+        className="absolute inset-0 bg-primary/60 backdrop-blur-sm"
+        style={{
+          transform: "translateX(0)", // Create compositing layer to prevent blur recalculation
+          willChange: "backdrop-filter", // Hint browser to optimize blur rendering
+        }}
+      />
 
       {/* Content Container */}
       <div className="z-10 text-center px-4 w-full max-w-4xl mx-auto flex flex-col gap-5">
