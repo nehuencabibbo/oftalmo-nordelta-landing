@@ -1,0 +1,16 @@
+{
+  "name": "Oftalmo Nordelta",
+  "short_name": "Oftalmo Nordelta",
+  "description": "Atención oftalmológica integral en Nordelta, Tigre",
+  "icons": [
+    {
+      "src": "/logo.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg"
+    }
+  ],
+  "theme_color": "#3c467b",
+  "background_color": "#ffffff",
+  "display": "standalone",
+  "start_url": "/"
+}
