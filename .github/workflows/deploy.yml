@@ -9,6 +9,8 @@ jobs:
   build:
     runs-on: ubuntu-latest
     name: Build and Push
+    permissions:
+      contents: write # Required to push to the build branch
     steps:
       - name: git-checkout
         uses: actions/checkout@v3
