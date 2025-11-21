@@ -1,0 +1,9 @@
+#!/bin/sh
+
+# Run prettier formatting before push
+echo "Running prettier formatting..."
+npm run fmt
+
+echo "✅ Code formatting complete"
+exit 0
+
