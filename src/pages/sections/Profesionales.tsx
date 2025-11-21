@@ -27,11 +27,13 @@ export default function Profesionales() {
         </div>
         <div className="flex flex-col gap-6 w-full lg:w-1/2 xl:w-[55%] text-white-soft">
           <div className="flex flex-row items-center gap-4">
-            <img
-              src={italianoLogo}
-              alt="Logo Hospital Italiano de Buenos Aires"
-              className="w-32 sm:w-40 max-w-full object-contain"
-            ></img>
+            <div className="flex items-center justify-center rounded-xl bg-white-bg p-3 shadow-lg">
+              <img
+                src={italianoLogo}
+                alt="Logo Hospital Italiano de Buenos Aires"
+                className="w-32 sm:w-40 max-w-full object-contain"
+              ></img>
+            </div>
             <h3 className="font-semibold text-3xl sm:text-4xl lg:text-5xl text-shadow-md">
               Dra. Betty Giselle Arteaga
             </h3>
