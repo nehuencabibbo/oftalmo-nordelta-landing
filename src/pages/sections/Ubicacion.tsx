@@ -1,10 +1,11 @@
-import { Navigation, MapPin, Building2, Clock } from "lucide-react";
+import { Navigation, MapPin, Building2 } from "lucide-react";
 import consultorioImage from "../../assets/consultorio-panoramica.jpeg";
 import consultorioEntradaImage from "../../assets/consultorio-entrada.jpeg";
+import { Address, MapsUrl, MapsEmbedSrc } from "../../constants";
 
 export default function Ubicacion() {
   const openInMaps = () => {
-    window.open("https://maps.app.goo.gl/Wh1MhfQVphojvN5y5", "_blank");
+    window.open(MapsUrl, "_blank");
   };
 
   return (
@@ -20,8 +21,7 @@ export default function Ubicacion() {
           <p className="tracking-wide text-center text-white-soft max-w-4xl mx-auto text-lg text-shadow-md">
             Nos encontramos en{" "}
             <span className="tracking-wide text-accent font-semibold">
-              Pje. de las Ciencias 75, B1670 Rincón de Milberg, Provincia de
-              Buenos Aires.
+              {Address}
             </span>
           </p>
         </div>
@@ -29,7 +29,7 @@ export default function Ubicacion() {
           <div className="relative flex-1">
             <div className="relative h-full min-h-[300px] md:min-h-[400px] lg:min-h-full rounded-3xl overflow-hidden shadow-2xl border border-border">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3287.493863893361!2d-58.73033502330959!3d-34.51268485292881!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcbd16a8c044d7%3A0xb157a8f3d6c8b98b!2sPje.%20de%20las%20Ciencias%2075%2C%20B1670%20Buenos%20Aires%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1700440332301!5m2!1ses-419!2sar"
+                src={MapsEmbedSrc}
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
@@ -41,10 +41,10 @@ export default function Ubicacion() {
               />
               <button
                 onClick={openInMaps}
-                className="cta-button bg-accent!  flex justify-center items-center hover:cursor-pointer absolute max-[335px]:bottom-[15%] bottom-[25%] sm:bottom-[30%] md:bottom-[37%] lg:bottom-[44%] left-1/2 -translate-x-1/2 z-10"
+                className="cta-button bg-accent! flex justify-center items-center hover:cursor-pointer absolute max-[335px]:bottom-[15%] bottom-[15%] min-[473px]:bottom-[20%] sm:bottom-[20%] md:bottom-[22%] lg:bottom-[29%] left-1/2 -translate-x-1/2 z-10 text-sm min-[385px]:text-base"
               >
                 <Navigation className="w-5 h-5 mr-2" />
-                Abrir en Google Maps
+                Abrir en Google&nbsp;Maps
               </button>
             </div>
           </div>
@@ -57,8 +57,7 @@ export default function Ubicacion() {
                 <div className="flex items-start gap-3">
                   <MapPin size={22} className="shrink-0 text-accent mt-0.5" />
                   <p className="text-base text-white-soft/80 leading-relaxed">
-                    Pje. de las Ciencias 75, B1670 Rincón de Milberg, Provincia
-                    de Buenos Aires.
+                    {Address}
                   </p>
                 </div>
                 <div className="flex items-start gap-3">
@@ -69,14 +68,6 @@ export default function Ubicacion() {
                   <p className="text-base text-white-soft/80 leading-relaxed">
                     North Coral Plaza · 4to Piso · Oficina 45.
                   </p>
-                </div>
-                <div className="flex items-center gap-3 text-white-soft/80 text-base">
-                  <Clock className="w-5 h-5 shrink-0 text-accent" />
-                  <div className="flex flex-col">
-                    <span className="whitespace-nowrap">
-                      Lunes y Viernes · 09:00 a 20:00 hs
-                    </span>
-                  </div>
                 </div>
               </div>
             </section>

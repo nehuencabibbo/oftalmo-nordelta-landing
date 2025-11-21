@@ -58,17 +58,25 @@ export default function Profesionales() {
             </p>
             <p className="text-lg sm:text-xl leading-relaxed text-white-soft/90 text-justify">
               Además de su extensa labor asistencial, la Dra. Arteaga cumple un
-              rol académico fundamental como{" "}
-              <span className="font-bold text-accent">Profesora</span> del
-              Departamento de Clínica Quirúrgica en el Instituto Universitario
-              del Hospital Italiano. Su compromiso con la excelencia y la
-              actualización constante se refleja en su participación activa en
-              el{" "}
+              rol académico destacado como{" "}
               <span className="font-bold text-accent">
-                Congreso Mundial de Oftalmología (WOC)
+                Profesora de Posgrado
+              </span>{" "}
+              del Departamento de Clínica Quirúrgica de la{" "}
+              <span className="font-bold text-accent">
+                Universidad del Hospital Italiano
               </span>
-              , donde frecuentemente presenta afiches y comparte sus
-              conocimientos.
+              , además se desempeña como tutora para la{" "}
+              <span className="font-bold text-accent">
+                Pan-American Association of Ophthalmology
+              </span>
+              . Su compromiso con la excelencia y la actualización constante se
+              refleja en su participación activa en{" "}
+              <span className="font-bold text-accent">
+                eventos de actualización médica tanto nacionales como
+                internacionales
+              </span>
+              .
             </p>
           </div>
           <div className="flex justify-center mt-4">

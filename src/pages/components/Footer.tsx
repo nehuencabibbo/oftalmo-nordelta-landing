@@ -1,10 +1,13 @@
-import { MapPin, PhoneCall, Mail, Clock } from "lucide-react";
+import { MapPin, PhoneCall, Mail } from "lucide-react";
 import type { IconType } from "react-icons";
 import {
   PhoneNumber,
   PhoneNumberDisplay,
   WhatsappLink,
   WhatsappInitialMessage,
+  Address,
+  InstagramUrl,
+  FacebookUrl,
 } from "../../constants";
 import {
   FaWhatsapp,
@@ -15,9 +18,7 @@ import {
 } from "react-icons/fa";
 import qrContactImage from "../../assets/qr-contacto.jpeg";
 
-const email = "contacto@oftalmonordelta.com";
-const addressLine = "Pje. de las Ciencias 75";
-const addressCity = "Rincón de Milberg, Provincia de Buenos Aires";
+const email = "oftalmonordelta@gmail.com";
 
 export default function Footer() {
   const phoneDigits = PhoneNumber.replace(/\D/g, "");
@@ -33,13 +34,13 @@ export default function Footer() {
     comingSoon?: boolean;
   }> = [
     {
-      href: "https://www.instagram.com/oftalmonordelta/",
+      href: InstagramUrl,
       label: "Instagram",
       icon: FaInstagram,
       iconSize: 18,
     },
     {
-      href: "https://www.facebook.com/OftalmoNordelta/",
+      href: FacebookUrl,
       label: "Facebook",
       icon: FaFacebook,
       iconSize: 18,
@@ -73,8 +74,7 @@ export default function Footer() {
           <div className="flex items-start gap-3 text-white-soft/80">
             <MapPin className="w-5 h-5 text-accent" />
             <div className="flex flex-col text-sm">
-              <span>{addressLine}</span>
-              <span>{addressCity}</span>
+              <span>{Address}</span>
             </div>
           </div>
         </div>
@@ -95,14 +95,6 @@ export default function Footer() {
             <Mail className="w-5 h-5 shrink-0 text-accent" />
             <span>{email}</span>
           </a>
-          <div className="flex items-center gap-3 text-white-soft/80 text-sm">
-            <Clock className="w-5 h-5 shrink-0 text-accent" />
-            <div className="flex flex-col">
-              <span className="whitespace-nowrap">
-                Lunes y Viernes · 09:00 a 20:00 hs
-              </span>
-            </div>
-          </div>
         </div>
 
         <div className="flex flex-col gap-4 md:flex-1 max-w-md">
