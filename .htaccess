@@ -1,0 +1,29 @@
+# Hostinger Apache Configuration for Oftalmo Nordelta
+# This file handles redirects and SPA routing
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+
+  # Step 1: Force HTTPS first (security)
+  RewriteCond %{HTTPS} off
+  RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+  # Step 2: Redirect www to non-www (301 permanent redirect)
+  # This ensures both www and non-www resolve to the same URL
+  RewriteCond %{HTTP_HOST} ^www\.oftalmonordelta\.com$ [NC]
+  RewriteRule ^(.*)$ https://oftalmonordelta.com/$1 [R=301,L]
+
+  # Step 3: Handle React SPA routing
+  # This ensures all routes work correctly with client-side routing
+  RewriteRule ^index\.html$ - [L]
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule . /index.html [L]
+</IfModule>
+
+# Optional: If you prefer www instead of non-www, comment out the www redirect above
+# and uncomment these lines instead:
+# RewriteCond %{HTTP_HOST} ^oftalmonordelta\.com$ [NC]
+# RewriteRule ^(.*)$ https://www.oftalmonordelta.com/$1 [R=301,L]
+
