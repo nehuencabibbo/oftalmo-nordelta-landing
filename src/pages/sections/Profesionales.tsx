@@ -29,6 +29,7 @@ export default function Profesionales() {
           <div className="flex flex-row items-center gap-4">
             <img
               src={italianoLogo}
+              alt="Logo Hospital Italiano de Buenos Aires"
               className="w-32 sm:w-40 max-w-full object-contain"
             ></img>
             <h3 className="font-semibold text-3xl sm:text-4xl lg:text-5xl text-shadow-md">

@@ -10,6 +10,7 @@ export const WhatsappServicioConsultingMessage =
 
 export const Address = "Pje. de las Ciencias 75, Nordelta, Tigre.";
 
+export const WebsiteUrl = "https://oftalmonordelta.com"; // Update with your actual domain
 export const InstagramUrl = "https://www.instagram.com/oftalmonordelta/";
 export const FacebookUrl = "https://www.facebook.com/OftalmoNordelta/";
 
