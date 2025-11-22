@@ -60,16 +60,19 @@ html {
   /* Color Palette */
 
   /* White neutrals */
-  --white-bg: rgb(230, 235, 255);
+
+  /* Son iguales pq me gustaba mas el soft para bgs */
+  --white-bg: rgb(245, 247, 255);
   --white-soft: rgb(245, 247, 255);
 
   /* Black neutrals */
   --black-bg: rgb(20, 24, 39);
   --black-soft: rgb(34, 36, 46);
-  black-tinted: rgb(26, 37, 66);
+  --black-tinted: rgb(26, 37, 66);
 
   /* Main palette */
   --primary: rgb(26, 33, 48);
+  --primary-light: rgb(38, 46, 64);
   --secondary: rgb(90, 114, 160);
   --accent: rgb(131, 180, 255);
   --custom-white: rgb(253, 255, 226);
@@ -78,6 +81,7 @@ html {
 @theme {
   /* Main palette */
   --color-primary: var(--primary);
+  --color-primary-light: var(--primary-light);
   --color-secondary: var(--secondary);
   --color-accent: var(--accent);
   --color-custom-white: var(--custom-white);
