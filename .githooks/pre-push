@@ -4,6 +4,15 @@
 echo "Running prettier formatting..."
 npm run fmt
 
-echo "✅ Code formatting complete"
+# Check if prettier made any changes
+if [ -n "$(git diff --name-only)" ]; then
+  echo "📝 Formatting changes detected, adding to current commit..."
+  git add -A
+  git commit --amend --no-edit
+  echo "✅ Formatting changes added to current commit"
+else
+  echo "✅ Code already formatted"
+fi
+
 exit 0
 
