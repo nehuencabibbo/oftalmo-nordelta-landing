@@ -10,7 +10,7 @@ This is the Landing Page for Oftalmo Nordelta Oftalmology Clinic.
 
 ## Site
 
-The site can be accessed by going to [https://oftalmonordelta.com](https://oftalmonordelta.com/)
+The site can be accessed by going to <a href="https://oftalmonordelta.com" target="_blank" rel="noopener noreferrer">https://oftalmonordelta.com</a>
 
 ## Dependencies
 
@@ -21,7 +21,7 @@ The site can be accessed by going to [https://oftalmonordelta.com](https://oftal
 
 ## Run
 
-Add the githooks for formatting
+Add the githooks for formatting with prettier pre push
 
 ```bash
 ./setup-hooks.sh
@@ -46,33 +46,3 @@ Build for deploy
 ```bash
 npm run build
 ```
-
-## Git Hooks
-
-This repository includes a pre-push hook that automatically runs `npm run fmt` (Prettier formatting) before every push.
-
-### Setup (First Time Only)
-
-**On Linux/Mac:**
-
-```bash
-./setup-hooks.sh
-```
-
-**On Windows:**
-
-```bash
-setup-hooks.bat
-```
-
-Or manually:
-
-```bash
-git config core.hooksPath .githooks
-```
-
-The hook will:
-
-- Run Prettier formatting before each push
-- Warn you if formatting changes were made
-- Require you to commit the formatting changes before pushing
