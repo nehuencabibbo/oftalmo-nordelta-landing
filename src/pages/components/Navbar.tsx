@@ -58,13 +58,13 @@ export default function Navbar() {
     {
       id: "hero",
       label: "Inicio",
-      textColor: "text-black-tinted",
+      textColor: "text-black-soft",
       icon: Home,
     },
     {
       id: "profesionales",
       label: "Profesionales",
-      textColor: "text-black-tinted",
+      textColor: "text-black-soft",
       icon: Users,
     },
     {
@@ -179,7 +179,7 @@ export default function Navbar() {
           </SheetTrigger>
           <SheetContent side="right" className="w-[300px] sm:w-[400px]">
             <SheetHeader className="flex flex-col gap-2">
-              <SheetTitle className="text-left text-primary text-2xl font-bold">
+              <SheetTitle className="text-left text-primary opacity-90 text-2xl font-bold">
                 Oftalmo Nordelta
               </SheetTitle>
               <div className="border-b border-gray-200" />

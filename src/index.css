@@ -56,22 +56,31 @@ html {
   --sidebar-ring: oklch(0.708 0 0);
 
   /* ================ MIOS ====================== */
+
+  /* Color Palette */
+
+  /* White neutrals */
   --white-bg: rgb(230, 235, 255);
   --white-soft: rgb(245, 247, 255);
 
   /* Black neutrals */
   --black-bg: rgb(20, 24, 39);
   --black-soft: rgb(34, 36, 46);
-  --black-tinted: rgb(26, 37, 66);
+  black-tinted: rgb(26, 37, 66);
+
+  /* Main palette */
+  --primary: rgb(26, 33, 48);
+  --secondary: rgb(90, 114, 160);
+  --accent: rgb(131, 180, 255);
+  --custom-white: rgb(253, 255, 226);
 }
 
 @theme {
   /* Main palette */
-  --color-primary: rgb(60, 70, 123);
-  --color-secondary: rgb(80, 88, 156);
-  --color-tertiary: rgb(99, 108, 203);
-  --color-accent: rgb(110, 140, 251);
-  --color-custom-white: rgb(248, 249, 255);
+  --color-primary: var(--primary);
+  --color-secondary: var(--secondary);
+  --color-accent: var(--accent);
+  --color-custom-white: var(--custom-white);
 
   /* Extra */
   --color-whatsapp-green: rgb(28, 165, 80);

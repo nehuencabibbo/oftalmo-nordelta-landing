@@ -20,13 +20,13 @@ const {
 
 // Accordion styling constants - change these to update all accordions at once
 const accordionTitleClass =
-  "text-left text-base text-black-tinted/90 text-shadow-sm [&[data-state=open]]:underline";
-const accordionItemClass = "border-b border-black/70";
+  "text-left text-base text-black-soft/90 text-shadow-sm [&[data-state=open]]:underline";
+const accordionItemClass = "border-b border-black-soft/70";
 const accordionContentClass = "text-black-soft";
 
 // Section title styling constant - change this to update all H3 section titles at once
 const sectionTitleClass =
-  "text-black-tinted text-center text-xl sm:text-[26px] font-bold mb-4";
+  "text-black-soft text-center text-xl sm:text-[26px] font-bold mb-4";
 
 export default function Atencion() {
   const [openValue, setOpenValue] = useState<string | undefined>(undefined);
