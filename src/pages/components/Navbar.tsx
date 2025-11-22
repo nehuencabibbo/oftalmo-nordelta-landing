@@ -96,7 +96,7 @@ export default function Navbar() {
     >
       <a
         className={`opacity-90 text-shadow-md text-xl min-[425px]:text-2xl font-bold transition-colors duration-500 ${
-          isScrolled ? "text-primary" : "text-white"
+          isScrolled ? "text-primary" : "text-white-soft"
         }`}
         onClick={(e) => scrollToSection(e, "hero")}
         style={{ cursor: "pointer", textDecoration: "none" }}
@@ -107,7 +107,7 @@ export default function Navbar() {
       {/* Desktop Navigation */}
       <ul
         className={`text-lg [&_a]:transition-all [&_a]:duration-500 text-shadow-md gap-10 font-semibold h-full items-center hidden min-[935px]:flex ${
-          isScrolled ? "text-secondary" : "text-white"
+          isScrolled ? "text-secondary" : "text-white-soft"
         }`}
       >
         <li>
@@ -170,7 +170,7 @@ export default function Navbar() {
           <SheetTrigger asChild>
             <button
               className={`transition-colors duration-500 ${
-                isScrolled ? "text-secondary" : "text-white"
+                isScrolled ? "text-secondary" : "text-white-soft"
               }`}
               aria-label="Open menu"
             >
