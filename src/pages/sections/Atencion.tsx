@@ -33,7 +33,7 @@ export default function Atencion() {
   return (
     <section
       id="atencion"
-      className="flex flex-col items-center w-full py-10 gap-10 bg-primary-light"
+      className="flex flex-col items-center w-full py-10 gap-10 bg-secondary"
     >
       <div className="flex flex-col items-center gap-3">
         <h2 className="text-white-soft text-center text-5xl lg:text-6xl font-semibold text-shadow-lg">

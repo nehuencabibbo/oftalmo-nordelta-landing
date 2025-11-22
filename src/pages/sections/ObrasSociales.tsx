@@ -12,7 +12,7 @@ const coverageLogos = [
 
 export default function ObrasSociales() {
   return (
-    <section id="cobertura" className="w-full bg-primary-light px-6 py-8">
+    <section id="cobertura" className="w-full bg-secondary px-6 py-8">
       <div className="mx-auto w-full max-w-7xl">
         <div className="rounded-3xl bg-white-bg p-8 md:py-12 md:px-18 shadow-lg">
           <div className="flex w-full flex-col items-center text-center gap-8 lg:gap-4 lg:flex-row lg:items-start lg:justify-between lg:text-left">
@@ -39,11 +39,11 @@ export default function ObrasSociales() {
               <p className="mb-4 text-lg font-medium text-black-soft md:text-center italic">
                 Algunas de ellas...
               </p>
-              <div className="grid w-full grid-cols-2 gap-6">
+              <div className="grid w-full grid-cols-2 gap-8">
                 {coverageLogos.map(({ src, alt }) => (
                   <div
                     key={alt}
-                    className="flex min-[380px]:min-h-[90px] min-[380px]:p-3 min-[420px]:min-h-[120px] min-[420px]:p-4 min-h-[80px] sm:min-h-[140px] w-full items-center justify-center rounded-xl bg-secondary/20 hover:bg-secondary/30 p-2 sm:p-4 shadow-lg transition-transform duration-200 ease-out hover:-translate-y-1 hover:scale-105 hover:shadow-xl"
+                    className="flex min-h-[140px] w-full items-center justify-center rounded-xl bg-secondary/20 hover:bg-secondary/30 p-4 shadow-lg transition-transform duration-200 ease-out hover:-translate-y-1 hover:scale-105 hover:shadow-xl"
                   >
                     <img
                       src={src}
