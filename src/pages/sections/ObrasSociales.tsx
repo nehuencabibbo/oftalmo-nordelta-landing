@@ -12,7 +12,7 @@ const coverageLogos = [
 
 export default function ObrasSociales() {
   return (
-    <section id="cobertura" className="w-full bg-primary-light px-6 py-8">
+    <section id="cobertura" className="w-full bg-secondary px-6 py-8">
       <div className="mx-auto w-full max-w-7xl">
         <div className="rounded-3xl bg-white-bg p-8 md:py-12 md:px-18 shadow-lg">
           <div className="flex w-full flex-col items-center text-center gap-8 lg:gap-4 lg:flex-row lg:items-start lg:justify-between lg:text-left">
