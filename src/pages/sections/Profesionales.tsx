@@ -10,7 +10,7 @@ export default function Profesionales() {
       id="profesionales"
       className="flex flex-col justify-center items-center w-full min-h-screen bg-primary px-6 py-8 md:px-10  gap-12"
     >
-      <h2 className="text-white-soft text-center text-4xl sm:text-5xl lg:text-6xl font-semibold text-shadow-md">
+      <h2 className="text-white-soft text-center text-5xl lg:text-6xl font-semibold text-shadow-md">
         Profesionales
       </h2>
       <div className="flex flex-col lg:flex-row w-full max-w-6xl gap-10 lg:gap-16 items-center lg:items-stretch">
