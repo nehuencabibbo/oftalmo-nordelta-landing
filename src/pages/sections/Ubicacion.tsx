@@ -15,7 +15,7 @@ export default function Ubicacion() {
     >
       <div className="flex flex-col gap-4 md:gap-6 w-full max-w-6xl">
         <div className="flex flex-col gap-4">
-          <h2 className="text-center text-white-soft text-5xl font-semibold text-shadow-md">
+          <h2 className="text-center text-white-soft leading-tight text-5xl font-semibold text-shadow-md">
             ¿Dónde estamos?
           </h2>
           <p className="tracking-wide text-center text-white-soft max-w-4xl mx-auto text-lg text-shadow-md">

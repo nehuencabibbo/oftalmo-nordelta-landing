@@ -27,7 +27,7 @@ export default function Profesionales() {
         </div>
         <div className="flex flex-col gap-6 w-full lg:w-1/2 xl:w-[55%] text-white-soft">
           <div className="flex flex-row items-center gap-4">
-            <div className="flex items-center justify-center rounded-xl bg-white-bg p-3 shadow-lg">
+            <div className="flex items-center justify-center min-w-[117px] min-h-[57px] rounded-xl bg-white-bg p-3 shadow-lg">
               <img
                 src={italianoLogo}
                 alt="Logo Hospital Italiano de Buenos Aires"

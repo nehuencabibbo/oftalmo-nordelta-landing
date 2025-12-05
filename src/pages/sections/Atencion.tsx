@@ -36,7 +36,7 @@ export default function Atencion() {
       className="flex flex-col items-center w-full py-10 gap-10 bg-primary-light"
     >
       <div className="flex flex-col items-center gap-3">
-        <h2 className="text-white-soft text-center text-5xl lg:text-6xl font-semibold text-shadow-lg">
+        <h2 className="text-white-soft text-center leading-tight text-5xl lg:text-6xl font-semibold text-shadow-lg">
           Algunas de Nuestras Prestaciones
         </h2>
         <p className="text-white-soft/70 text-center text-base lg:text-lg max-w-4xl px-15">
