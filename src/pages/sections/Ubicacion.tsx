@@ -1,4 +1,12 @@
 import { Navigation, MapPin, Building2 } from "lucide-react";
+// WebP responsive images
+import consultorioPanoMobile from "../../assets/consultorio-panoramica-mobile.webp";
+import consultorioPanoTablet from "../../assets/consultorio-panoramica-tablet.webp";
+import consultorioPanoDesktop from "../../assets/consultorio-panoramica-desktop.webp";
+import consultorioEntradaMobile from "../../assets/consultorio-entrada-mobile.webp";
+import consultorioEntradaTablet from "../../assets/consultorio-entrada-tablet.webp";
+import consultorioEntradaDesktop from "../../assets/consultorio-entrada-desktop.webp";
+// Fallback images
 import consultorioImage from "../../assets/consultorio-panoramica.jpeg";
 import consultorioEntradaImage from "../../assets/consultorio-entrada.jpeg";
 import { Address, MapsUrl, MapsEmbedSrc } from "../../constants";
@@ -74,12 +82,20 @@ export default function Ubicacion() {
 
             <section className="flex flex-col gap-2">
               <div className="overflow-hidden rounded-3xl">
-                <img
-                  src={consultorioImage}
-                  alt="Vista del edificio"
-                  className="lg:h-40 sm:h-80 h-60 w-full object-cover"
-                  loading="lazy"
-                />
+                <picture>
+                  <source
+                    type="image/webp"
+                    srcSet={`${consultorioPanoMobile} 640w, ${consultorioPanoTablet} 1024w, ${consultorioPanoDesktop} 1920w`}
+                    sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 32vw"
+                  />
+                  <img
+                    src={consultorioImage}
+                    alt="Vista del edificio North Coral Plaza"
+                    className="lg:h-40 sm:h-80 h-60 w-full object-cover"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </picture>
               </div>
               <div className="flex flex-col gap-1">
                 <h3 className="text-xl font-semibold text-white-soft tracking-wide">
@@ -97,12 +113,20 @@ export default function Ubicacion() {
 
             <section className="flex flex-col gap-2">
               <div className="overflow-hidden rounded-3xl">
-                <img
-                  src={consultorioEntradaImage}
-                  alt="Entrada principal"
-                  className="lg:h-40 sm:h-80 h-60 w-full object-cover object-bottom"
-                  loading="lazy"
-                />
+                <picture>
+                  <source
+                    type="image/webp"
+                    srcSet={`${consultorioEntradaMobile} 640w, ${consultorioEntradaTablet} 1024w, ${consultorioEntradaDesktop} 1600w`}
+                    sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 32vw"
+                  />
+                  <img
+                    src={consultorioEntradaImage}
+                    alt="Entrada principal del consultorio"
+                    className="lg:h-40 sm:h-80 h-60 w-full object-cover object-bottom"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </picture>
               </div>
               <div className="flex flex-col gap-1">
                 <h3 className="text-xl font-semibold text-white-soft tracking-wide">
