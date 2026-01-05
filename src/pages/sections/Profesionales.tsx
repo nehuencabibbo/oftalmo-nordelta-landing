@@ -1,5 +1,14 @@
+// WebP images with responsive variants
+import mamusMobile from "../../assets/mamus-frente-mobile.webp";
+import mamusTablet from "../../assets/mamus-frente-tablet.webp";
+import mamusDesktop from "../../assets/mamus-frente-desktop.webp";
+import mamusXl from "../../assets/mamus-frente-xl.webp";
+import italianoLogoWebp from "../../assets/hospital-italiano-logo.webp";
+
+// Fallback images
 import mamus from "../../assets/mamus-frente.png";
 import italianoLogo from "../../assets/hospital-italiano-logo.png";
+
 import { FaWhatsapp } from "react-icons/fa";
 import { WhatsappInitialMessage } from "../../constants";
 import { getWhatsappContactLinkWithMessage } from "../../utils/contact";
@@ -15,11 +24,21 @@ export default function Profesionales() {
       </h2>
       <div className="flex flex-col lg:flex-row w-full max-w-6xl gap-10 lg:gap-16 items-center lg:items-stretch">
         <div className="flex flex-col w-full max-w-md sm:max-w-xl lg:w-1/2 xl:w-[45%]">
-          <img
-            src={mamus}
-            className="w-full h-auto object-cover rounded-3xl shadow-2xl"
-            alt="Profesional principal"
-          ></img>
+          <picture>
+            <source
+              type="image/webp"
+              srcSet={`${mamusMobile} 400w, ${mamusTablet} 600w, ${mamusDesktop} 800w, ${mamusXl} 1200w`}
+              sizes="(max-width: 640px) 400px, (max-width: 1024px) 600px, (max-width: 1280px) 800px, 1200px"
+            />
+            <img
+              src={mamus}
+              className="w-full h-auto object-cover rounded-3xl shadow-2xl"
+              alt="Dra. Betty Giselle Arteaga - Médica Oftalmóloga"
+              loading="eager"
+              decoding="async"
+              fetchPriority="high"
+            />
+          </picture>
           <p className="text-sm text-white-soft/80 italic mt-3 text-center">
             Dr. Betty Giselle Arteaga, Medica Oftalmologa, M.N. 112049 – M.P.
             332301
@@ -28,11 +47,16 @@ export default function Profesionales() {
         <div className="flex flex-col gap-6 w-full lg:w-1/2 xl:w-[55%] text-white-soft">
           <div className="flex flex-row items-center gap-4">
             <div className="flex items-center justify-center min-w-[117px] min-h-[57px] rounded-xl bg-white-bg p-3 shadow-lg">
-              <img
-                src={italianoLogo}
-                alt="Logo Hospital Italiano de Buenos Aires"
-                className="w-32 sm:w-40 max-w-full object-contain"
-              ></img>
+              <picture>
+                <source type="image/webp" srcSet={italianoLogoWebp} />
+                <img
+                  src={italianoLogo}
+                  alt="Logo Hospital Italiano de Buenos Aires"
+                  className="w-32 sm:w-40 max-w-full object-contain"
+                  loading="eager"
+                  decoding="async"
+                />
+              </picture>
             </div>
             <h3 className="font-semibold text-3xl sm:text-4xl lg:text-5xl text-shadow-md">
               Dra. Betty Giselle Arteaga

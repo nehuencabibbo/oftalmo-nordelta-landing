@@ -16,6 +16,9 @@ import {
   FaFacebook,
   FaTiktok,
 } from "react-icons/fa";
+// WebP image
+import qrContactImageWebp from "../../assets/qr-contacto.webp";
+// Fallback image
 import qrContactImage from "../../assets/qr-contacto.jpeg";
 
 const email = "oftalmonordelta@gmail.com";
@@ -156,12 +159,16 @@ export default function Footer() {
         <div className="flex flex-col gap-4 md:flex-1 max-w-sm">
           <h4 className="text-xl font-semibold">Agendar Contacto</h4>
           <div className="flex justify-left">
-            <img
-              src={qrContactImage}
-              alt="QR código para agendar contacto"
-              className="w-25 h-25 object-contain"
-              loading="lazy"
-            />
+            <picture>
+              <source type="image/webp" srcSet={qrContactImageWebp} />
+              <img
+                src={qrContactImage}
+                alt="QR código para agendar contacto"
+                className="w-25 h-25 object-contain"
+                loading="lazy"
+                decoding="async"
+              />
+            </picture>
           </div>
         </div>
       </div>

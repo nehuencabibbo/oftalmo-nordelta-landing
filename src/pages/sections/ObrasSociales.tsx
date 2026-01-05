@@ -1,13 +1,19 @@
+// WebP logos
+import medicusLogoWebp from "../../assets/medicus-logo.webp";
+import osdeLogoWebp from "../../assets/osde-logo.webp";
+import omintLogoWebp from "../../assets/omint-logo.webp";
+import italianoLogoWebp from "../../assets/hospital-italiano-logo.webp";
+// Fallback logos
 import medicusLogo from "../../assets/medicus-logo.png";
 import osdeLogo from "../../assets/osde-logo.png";
 import omintLogo from "../../assets/omint-logo.png";
 import italianoLogo from "../../assets/hospital-italiano-logo.png";
 
 const coverageLogos = [
-  { src: medicusLogo, alt: "Cobertura Medicus" },
-  { src: osdeLogo, alt: "Cobertura OSDE" },
-  { src: omintLogo, alt: "Cobertura Omint" },
-  { src: italianoLogo, alt: "Cobertura Hospital Italiano" },
+  { srcWebp: medicusLogoWebp, src: medicusLogo, alt: "Cobertura Medicus" },
+  { srcWebp: osdeLogoWebp, src: osdeLogo, alt: "Cobertura OSDE" },
+  { srcWebp: omintLogoWebp, src: omintLogo, alt: "Cobertura Omint" },
+  { srcWebp: italianoLogoWebp, src: italianoLogo, alt: "Cobertura Hospital Italiano" },
 ];
 
 export default function ObrasSociales() {
@@ -40,16 +46,21 @@ export default function ObrasSociales() {
                 Algunas de ellas...
               </p>
               <div className="grid w-full grid-cols-2 gap-6">
-                {coverageLogos.map(({ src, alt }) => (
+                {coverageLogos.map(({ srcWebp, src, alt }) => (
                   <div
                     key={alt}
                     className="flex min-[380px]:min-h-[90px] min-[380px]:p-3 min-[420px]:min-h-[120px] min-[420px]:p-4 min-h-[80px] sm:min-h-[140px] w-full items-center justify-center rounded-xl bg-secondary/20 hover:bg-secondary/30 p-2 sm:p-4 shadow-lg transition-transform duration-200 ease-out hover:-translate-y-1 hover:scale-105 hover:shadow-xl"
                   >
-                    <img
-                      src={src}
-                      alt={alt}
-                      className="h-16 w-full object-contain" /*brightness-0 */
-                    />
+                    <picture>
+                      <source type="image/webp" srcSet={srcWebp} />
+                      <img
+                        src={src}
+                        alt={alt}
+                        className="h-16 w-full object-contain"
+                        loading="lazy"
+                        decoding="async"
+                      />
+                    </picture>
                   </div>
                 ))}
               </div>

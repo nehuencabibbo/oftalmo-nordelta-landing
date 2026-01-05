@@ -1,3 +1,8 @@
+// WebP responsive images
+import consultorioPanoMobile from "../../assets/consultorio-panoramica-mobile.webp";
+import consultorioPanoTablet from "../../assets/consultorio-panoramica-tablet.webp";
+import consultorioPanoDesktop from "../../assets/consultorio-panoramica-desktop.webp";
+// Fallback image
 import consultorioPano from "../../assets/consultorio-panoramica.jpeg";
 import { MamusWorkStartDate, OpeningDate } from "../../constants";
 
@@ -12,12 +17,21 @@ export default function Hero() {
       }}
     >
       {/* Background Image */}
-      <img
-        src={consultorioPano}
-        alt="Consultorio Oftalmo Nordelta"
-        className="absolute inset-0 w-full h-full object-cover"
-        loading="eager"
-      />
+      <picture>
+        <source
+          type="image/webp"
+          srcSet={`${consultorioPanoMobile} 640w, ${consultorioPanoTablet} 1024w, ${consultorioPanoDesktop} 1920w`}
+          sizes="100vw"
+        />
+        <img
+          src={consultorioPano}
+          alt="Consultorio Oftalmo Nordelta"
+          className="absolute inset-0 w-full h-full object-cover"
+          loading="eager"
+          decoding="async"
+          fetchPriority="high"
+        />
+      </picture>
 
       {/* Primary Color Overlay with Blur Effect */}
       <div
