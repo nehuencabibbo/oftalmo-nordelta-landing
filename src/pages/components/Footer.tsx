@@ -164,7 +164,7 @@ export default function Footer() {
               <img
                 src={qrContactImage}
                 alt="QR código para agendar contacto"
-                className="w-25 h-25 object-contain"
+                className="w-24 h-24 object-contain"
                 loading="lazy"
                 decoding="async"
               />
