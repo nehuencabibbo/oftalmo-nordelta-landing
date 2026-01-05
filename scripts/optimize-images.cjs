@@ -86,8 +86,8 @@ async function optimizeImage(inputFile, config) {
         })
         .toFile(outputPath);
 
-      const stats = fs.statSync(outputPath);
-      const originalStats = fs.statSync(inputPath);
+      const stats = await fs.promises.stat(outputPath);
+      const originalStats = await fs.promises.stat(inputPath);
       const savings = ((1 - stats.size / originalStats.size) * 100).toFixed(1);
 
       console.log(`  ✓ Created: ${outputName} (${(stats.size / 1024).toFixed(1)}KB, ${savings}% smaller)`);
