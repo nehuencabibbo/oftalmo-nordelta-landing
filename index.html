@@ -8,13 +8,16 @@
         dataLayer.push(arguments);
       }
       gtag("js", new Date());
-      gtag("config", "G-P1QYJLPLN1");
 
       // Load Google Analytics script after page load
       window.addEventListener('load', function() {
         var script = document.createElement('script');
         script.async = true;
         script.src = 'https://www.googletagmanager.com/gtag/js?id=G-P1QYJLPLN1';
+        script.onload = function() {
+          // Configure GA after the script has fully loaded
+          gtag("config", "G-P1QYJLPLN1");
+        };
         document.head.appendChild(script);
       });
     </script>
