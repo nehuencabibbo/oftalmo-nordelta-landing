@@ -27,6 +27,8 @@ export default function Hero() {
           src={consultorioPano}
           alt="Consultorio Oftalmo Nordelta"
           className="absolute inset-0 w-full h-full object-cover"
+          width={1920}
+          height={1080}
           loading="eager"
           decoding="async"
           fetchPriority="high"

@@ -162,6 +162,7 @@ export default function Navbar() {
         <a
           href={getWhatsappContactLinkWithMessage(WhatsappInitialMessage)}
           className="cta-button flex gap-1 text-md px-3 py-1.5"
+          aria-label="Sacar Turno por WhatsApp"
         >
           <FaWhatsapp className="w-5 h-5" />
           <span className="hidden min-[425px]:inline">Sacar Turno</span>

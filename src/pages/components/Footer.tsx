@@ -70,7 +70,7 @@ export default function Footer() {
             <h3 className="text-xl font-semibold text-shadow-md">
               Oftalmo Nordelta
             </h3>
-            <p className="text-base text-white-soft/70 leading-relaxed whitespace-nowrap">
+            <p className="text-base text-white-soft/90 leading-relaxed whitespace-nowrap">
               Atención oftalmológica integral.
             </p>
           </div>
@@ -86,14 +86,14 @@ export default function Footer() {
           <h4 className="text-xl font-semibold">Contacto</h4>
           <a
             href={`tel:${PhoneNumber}`}
-            className="flex items-center gap-3 text-white-soft/80 hover:text-white-soft transition-colors text-sm"
+            className="flex items-center gap-3 text-white-soft/95 hover:text-white-soft transition-colors text-sm"
           >
             <PhoneCall className="w-5 h-5 shrink-0 text-accent" />
             <span>{PhoneNumberDisplay}</span>
           </a>
           <a
             href={`mailto:${email}`}
-            className="flex items-center gap-3 text-white-soft/80 hover:text-white-soft transition-colors text-sm"
+            className="flex items-center gap-3 text-white-soft/95 hover:text-white-soft transition-colors text-sm"
           >
             <Mail className="w-5 h-5 shrink-0 text-accent" />
             <span>{email}</span>
@@ -109,12 +109,12 @@ export default function Footer() {
                   return (
                     <div
                       key={label}
-                      className="flex items-center justify-center gap-1 py-2 border border-white-soft/10 rounded-full text-xs sm:text-sm text-white-soft/50 cursor-not-allowed w-full relative"
+                      className="flex items-center justify-center gap-1 py-2 border border-white-soft/20 rounded-full text-xs sm:text-sm text-white-soft/70 cursor-not-allowed w-full relative"
                       title="Próximamente"
                     >
                       <Icon size={iconSize} className="shrink-0" />
                       <span>{label}</span>
-                      <span className="text-[10px] absolute -top-1 -right-1 bg-accent text-white-soft rounded-full px-1">
+                      <span className="text-[10px] absolute -top-1 -right-1 bg-accent text-primary rounded-full px-1.5 font-medium">
                         Próximamente
                       </span>
                     </div>
@@ -125,7 +125,7 @@ export default function Footer() {
                     key={label}
                     href={href}
                     target="_blank"
-                    className="flex items-center justify-center gap-1 py-2 border border-white-soft/20 rounded-full text-xs sm:text-sm text-white-soft/80 hover:border-white-soft hover:text-white-soft hover:bg-white-soft/10 transition-all w-full"
+                    className="flex items-center justify-center gap-1 py-2 border border-white-soft/25 rounded-full text-xs sm:text-sm text-white-soft/95 hover:border-white-soft hover:text-white-soft hover:bg-white-soft/10 transition-all w-full"
                   >
                     <Icon size={iconSize} className="shrink-0" />
                     <span>{label}</span>
@@ -139,7 +139,7 @@ export default function Footer() {
         <div className="flex flex-col gap-5 md:flex-1 max-w-sm">
           <div className="flex flex-col gap-1">
             <h4 className="text-xl font-semibold">Sacar turno</h4>
-            <p className="text-white-soft/70 text-sm">
+            <p className="text-white-soft/90 text-sm">
               Turnos Unicamente por Whatsapp
             </p>
           </div>
@@ -165,6 +165,8 @@ export default function Footer() {
                 src={qrContactImage}
                 alt="QR código para agendar contacto"
                 className="w-24 h-24 object-contain"
+                width={200}
+                height={200}
                 loading="lazy"
                 decoding="async"
               />
