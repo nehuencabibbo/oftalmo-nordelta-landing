@@ -1,11 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <!-- Google tag (gtag.js) -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-P1QYJLPLN1"
-    ></script>
+    <!-- Google tag (gtag.js) - Deferred for performance -->
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag() {
@@ -13,7 +9,17 @@
       }
       gtag("js", new Date());
 
-      gtag("config", "G-P1QYJLPLN1");
+      // Load Google Analytics script after page load
+      window.addEventListener('load', function() {
+        var script = document.createElement('script');
+        script.async = true;
+        script.src = 'https://www.googletagmanager.com/gtag/js?id=G-P1QYJLPLN1';
+        script.onload = function() {
+          // Configure GA after the script has fully loaded
+          gtag("config", "G-P1QYJLPLN1");
+        };
+        document.head.appendChild(script);
+      });
     </script>
     <!-- End Google tag (gtag.js) -->
 
@@ -226,8 +232,11 @@
         ]
       }
     </script>
-    <script type="module" crossorigin src="/assets/index-CHx1MIzT.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-J4daa0Rs.css">
+    <script type="module" crossorigin src="/assets/index-CLzvYZ_p.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/react-vendor-BDqp0ph7.js">
+    <link rel="modulepreload" crossorigin href="/assets/ui-vendor-3Qgt3jPJ.js">
+    <link rel="modulepreload" crossorigin href="/assets/icons-vendor-BOP8Ggvy.js">
+    <link rel="stylesheet" crossorigin href="/assets/index-izQUpaiQ.css">
   </head>
   <body>
     <!-- Google Tag Manager (noscript)
