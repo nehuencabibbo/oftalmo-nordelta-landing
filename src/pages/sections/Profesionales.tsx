@@ -34,6 +34,8 @@ export default function Profesionales() {
               src={mamus}
               className="w-full h-auto object-cover rounded-3xl shadow-2xl"
               alt="Dra. Betty Giselle Arteaga - Médica Oftalmóloga"
+              width={800}
+              height={1003}
               loading="eager"
               decoding="async"
               fetchPriority="high"
@@ -53,6 +55,8 @@ export default function Profesionales() {
                   src={italianoLogo}
                   alt="Logo Hospital Italiano de Buenos Aires"
                   className="w-32 sm:w-40 max-w-full object-contain"
+                  width={464}
+                  height={158}
                   loading="eager"
                   decoding="async"
                 />

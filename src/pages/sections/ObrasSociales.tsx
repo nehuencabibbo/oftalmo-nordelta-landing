@@ -57,6 +57,8 @@ export default function ObrasSociales() {
                         src={src}
                         alt={alt}
                         className="h-16 w-full object-contain"
+                        width={800}
+                        height={300}
                         loading="lazy"
                         decoding="async"
                       />
