@@ -1,5 +1,5 @@
 import sharp from 'sharp';
-import { readFileSync } from 'fs';
+import { readFile } from 'fs/promises';
 
 async function convertLogos() {
   // Convert social media logo (1200x630)
