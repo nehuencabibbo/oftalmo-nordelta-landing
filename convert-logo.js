@@ -53,7 +53,7 @@ convertLogos().catch(console.error);
   console.log('✓ Created logo-new.jpg (1200x630)');
 
   // Convert square logo (512x512)
-  const squareSvg = readFileSync('./public/logo-square.svg');
+  const squareSvg = await readFile('./public/logo-square.svg');
   await sharp(squareSvg)
     .resize(512, 512)
     .png()
