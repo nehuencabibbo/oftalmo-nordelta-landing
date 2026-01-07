@@ -4,9 +4,9 @@
   "description": "Centro Oftalmológico y Consultorio Oftalmológico en Nordelta, Tigre. Atención oftalmológica integral.",
   "icons": [
     {
-      "src": "/logo-square.png",
+      "src": "/logo.jpg",
       "sizes": "512x512",
-      "type": "image/png"
+      "type": "image/jpeg"
     }
   ],
   "theme_color": "#3c467b",
